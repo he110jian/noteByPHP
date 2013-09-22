@@ -4,7 +4,7 @@
 <title>HELLO</title>
 <script src="js/prototype.lite.js" type="text/javascript"></script>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
-    </head><body font-color:white>
+    </head><body font color:white>
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
  include_once("head.php");
