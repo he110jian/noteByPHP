@@ -1,4 +1,4 @@
 
-<a href="log.php">Logout</a>
+<a href="logout.php">Logout</a>
 
 <hr>
