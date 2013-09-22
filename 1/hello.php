@@ -1,4 +1,6 @@
 
-<H1 align:centerWELCOME!<H1>
+<H1 align:center>
+    WELCOME!
+    <H1>
 
     
