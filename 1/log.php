@@ -11,8 +11,7 @@ define(ALL_PS,"binggo");   //
  	if($s)
     {
  		setcookie("cookie","ok",time()+1800);
-        echo $_COOKIE['cookie'];
- 		
+ 		echo "<script language=\"javascript\">location.href='hello.php';</script>";
  	}
     else
     {
