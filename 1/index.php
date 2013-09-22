@@ -7,6 +7,7 @@
     </head><body style="color:white">
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
+include_once("log.php");
  include_once("head.php");
  if($_COOKIE['cookie']!='ok'){
 ?>
@@ -26,7 +27,7 @@
   }
 </script>
 <div align="center">
-  <form name="form2" action="login.php?action=login" method="post" onsubmit="return Checklogin()" >
+  <form name="form2" action="index.php?action=login" method="post" onsubmit="return Checklogin()" >
       Username:
   <input type="text" name="username" /><br/>
       Password:
@@ -39,7 +40,7 @@
     </div>
   <?php
  }else{
-  echo "<meta http-equiv=\"refresh\" content=\"3;url=admin.php\">waittong for 3seconds ...";
+  echo "<meta http-equiv=\"refresh\" content=\"3;url=hello.php\">waittong for 3seconds ...";
  }
 ?>
 </body>
