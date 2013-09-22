@@ -16,7 +16,7 @@ define(ALL_PS,"binggo");   //
  		setcookie("cookie","ok",time()+1800);
  		echo "<script language=\"javascript\">location.href='hello.php';</script>";
  	}else {
- 		echo "<script language=\"javascript\"> alert('您输入的用户名或密码有误，请重新输入！');</script>";
+ 		echo "<script language=\"javascript\"> alert('wrong username or password！');</script>";
  	}
  }
 //===========================退出登录
