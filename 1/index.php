@@ -14,12 +14,12 @@
 <script language="JavaScript" type="text/javascript">
   function Checklogin(){
   	if(form2.username.value==""){
-  		alert("请输入登录名");
+        alert("Username：");
   		form2.username.focus();
   		return false;
   	}
   	  	if(form2.psw.value==""){
-  		alert("请输入密码");
+  		alert("Password：");
   		form2.psw.focus();
   		return false;
   	}
@@ -32,8 +32,8 @@
   密  码：
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
-  <input type="submit" name="submit" value="登录"/>
-  <input type="reset" name="reset" value="重置"/>
+  <input type="submit" name="submit" value="LogOn"/>
+  <input type="reset" name="reset" value="Reset"/>
 
   </form>
   <?php
