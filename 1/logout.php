@@ -1,4 +1,5 @@
 <?php 
-setcookie("username"); 
-echo "注销成功"; 
+setcookie("cookie"); 
+	echo "<script language=\"javascript\"> alert('log out successfully!');</script>"; 
+ 	echo "<script language=\"javascript\">location.href='index.php';</script>";
 ?> 
