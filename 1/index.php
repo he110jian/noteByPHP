@@ -11,7 +11,8 @@
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
 </head>
 
-    <body bgcolor="">
+    <body>
+        <div id="div1"><img src="../js/1.jpg" /></div> 
 	<div>
         <h3 class="type" style="background-color:#6899CE"><a href="javascript:void(0)">activity</a></h3>
         <div class="content">
