@@ -1,1 +1,3 @@
-<H! align:center>WELCOME!<H1>
+<div align:center>
+<H!>WELCOME!<H1>
+    </div>
