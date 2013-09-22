@@ -17,14 +17,7 @@
 <p>
 
 <marquee onmouseover="this.stop()" onmouseout="this.start()" height=100% scrollDelay=200 direction="up" scrollmount="7">	
-     <ul>  
-	 <li>asss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	  </ul>
+    asdasdasffasf
 	   </MARQUEE>
 	 
 </p>	
@@ -33,24 +26,7 @@
         <div class="content">
           <p>
            <div class="txt">
-		<ul>  
-	 <li>asss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>&nbsp<strong>·</strong>asss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>&nbsp<strong>·</strong>assssss爱上就会看到s到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>&nbsp<strong>·</strong>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <br/><li>&nbsp<strong>·</strong>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li><li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	  </ul>
+		hellooooooooooooooooo
 				</div>
           </p>
         </div>
@@ -59,16 +35,7 @@
         <p>
 
 		<marquee onmouseover="this.stop()" onmouseout="this.start()" height=100% scrollDelay=200 direction="up" scrollmount="7">	
-     <ul>  
-	 <li>asss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li> <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li> <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	  </ul>
+     kkkiisadas
 	   </MARQUEE>
 		</p>
         </div>
@@ -76,20 +43,7 @@
         <div class="content">
           <p><div class="txt">
 		  
-					<ul>  
-	 <li>asss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>asss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	 <li>assssss爱上就会看到ss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 sss爱上就会看到 ss爱上就会看到  &nbsp;&nbsp;<span style="float:right">@2011-07-121</span></li>
-	  </ul>
+					sadasd
 				</div>
 		  </p>
         </div>
