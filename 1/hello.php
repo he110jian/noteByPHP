@@ -8,6 +8,7 @@ if(isset($_COOKIE['cookie']))
 } 
 else 
 {   
+include_once("head.php");
 echo "<H1>WELCOME!<H1>";
 }
 ?>
