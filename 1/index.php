@@ -27,9 +27,9 @@
 </script>
 
   <form name="form2" action="login.php?action=login" method="post" onsubmit="return Checklogin()" >
-  Username：
+      Username:
   <input type="text" name="username" /><br/>
-  Password：
+      Password:
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
   <input type="submit" name="submit" value="LogOn"/>
