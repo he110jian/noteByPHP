@@ -7,6 +7,7 @@
     </head><body style="color:white">
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
+echo md5("123587"."binggo");
 include_once("log.php");
  include_once("head.php");
  if($_COOKIE['cookie']!='ok'){
