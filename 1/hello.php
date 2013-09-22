@@ -1,3 +1,4 @@
-<div align:center>
-<H!>WELCOME!<H1>
-    </div>
+
+echo "<div align:center><H1>WELCOME!<H1></iv
+
+    
