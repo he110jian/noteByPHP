@@ -43,4 +43,8 @@
  }
 ?>
 </body>
+    <?php
+ include_once("foot.php");
+ 
+?>
 </html>
