@@ -39,7 +39,7 @@ include_once("log.php");
     </div>
   <?php
  }else{
-  echo "<meta http-equiv=\"refresh\" content=\"3;url=hello.php\">waittong for 3seconds ...";
+  echo "<meta http-equiv=\"refresh\" content=\"3;url=log.php\">waittong for 3seconds ...";
  }
 ?>
 </body>
