@@ -1,5 +1,5 @@
 <?php
-echo "<blink>hello!</blink>";
+echo "<h1><blink>hello!</h1>";
 ?>
 
 <body bgcolor=green>
