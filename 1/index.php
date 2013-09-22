@@ -27,9 +27,9 @@
 </script>
 
   <form name="form2" action="login.php?action=login" method="post" onsubmit="return Checklogin()" >
-  用户名：
+  Username：
   <input type="text" name="username" /><br/>
-  密  码：
+  Password：
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
   <input type="submit" name="submit" value="LogOn"/>
@@ -38,7 +38,7 @@
   </form>
   <?php
  }else{
-  echo "<meta http-equiv=\"refresh\" content=\"3;url=admin.php\">3秒后转入后台管理，请稍等...";
+  echo "<meta http-equiv=\"refresh\" content=\"3;url=admin.php\">waittong for 3seconds ...";
  }
 ?>
 </body>
