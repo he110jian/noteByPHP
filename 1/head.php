@@ -1,4 +1,4 @@
-<a href="add.php">添加留言</a>||
-<a href="list.php">留言列表</a>||
-<a href="login.php">登录</a>
+<a href="add.php">Add Message</a>||
+<a href="list.php">Message List</a>||
+<a href="login.php">LogOn</a>
 <hr>
