@@ -10,9 +10,7 @@
 <script src="js/moo.fx.pack.js" type="text/javascript"></script>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
 </head>
-<?
-	echo "HELLO";
-?>
+
 <body>
 	<div>
         <h3 class="type" style="background-color:#6899CE"><a href="javascript:void(0)">activity</a></h3>
