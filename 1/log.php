@@ -8,7 +8,7 @@ define(ALL_PS,"binggo");   //
 //=======================================登录
  if($_POST[sub]){
  	$username=str_replace(" ","",$_POST[username]);
- 	if($username=="jean")
+ 	if($username=="jan")
         $us=TRUE;
  	$ps=md5($_POST[password].ALL_PS)=="e18f8200bbe2fb0b0176a3b5c6228d3e";
  	$s=$us ? $ps : FALSE;
@@ -24,17 +24,6 @@ define(ALL_PS,"binggo");   //
  	setcookie("cookie","out");
  	echo "<script language=\"javascript\">location.href='index.php';</script>";
  }
-
-
-
-
-//echo md5("123587"."binggo");
-//echo $content="ddsad    dsadas dsad  dasd asdsad ";
-//echo "<br>";
-//echo str_replace(" ","&nbsp",$content);
-
-
-
 ?>
 
 
