@@ -11,7 +11,7 @@
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
 </head>
 
-    <body style="background-image:url(../js/1.jpg);background-repeat:repeat-x">
+    <body background:url(IMG/bg.jpg) no-repeat 0 0;background-attachment: fixed;>
 	<div>
         <h3 class="type" style="background-color:#6899CE"><a href="javascript:void(0)">activity</a></h3>
         <div class="content">
