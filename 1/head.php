@@ -1,3 +1,3 @@
 
-<a href='?out=login'>LogOut</a><hr>
+<a href='?out=index'>LogOut</a><hr>
 <hr>
