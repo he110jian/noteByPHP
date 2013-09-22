@@ -25,7 +25,7 @@
   	}
   }
 </script>
-
+<div align="center">
   <form name="form2" action="login.php?action=login" method="post" onsubmit="return Checklogin()" >
       Username:
   <input type="text" name="username" /><br/>
@@ -36,6 +36,7 @@
   <input type="reset" name="reset" value="Reset"/>
 
   </form>
+    </div>
   <?php
  }else{
   echo "<meta http-equiv=\"refresh\" content=\"3;url=admin.php\">waittong for 3seconds ...";
