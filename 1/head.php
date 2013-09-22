@@ -1,3 +1,3 @@
 
-<a href='?out=index'>LogOut</a><hr>
+<a href='log.php?out=login'>LogOut</a><hr>
 <hr>
