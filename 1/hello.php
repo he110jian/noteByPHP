@@ -1,6 +1,6 @@
 
 <?php
-echo $_COOKIE['cookie'];
+session_start();
 //判断登录
 include_once ("log.php");
 if ($_COOKIE['cookie'] != "ok") 
