@@ -1,3 +1,3 @@
 
-<a href="logout.php">Logout</a>
+<a href='?out=login'>LogOut</a><hr>
 <hr>
