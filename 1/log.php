@@ -14,7 +14,7 @@ define(ALL_PS,"binggo");   //
  	$s=$us ? $ps : FALSE;
  	if($s){
  		setcookie("cookie","ok",time()+1800);
- 		echo "<script language=\"javascript\">location.href='hello.php';</script>";
+ 		echo "<script language=\"javascript\">location.href='index.php';</script>";
  	}else {
  		echo "<script language=\"javascript\"> alert('wrong username or password!');</script>";
  	}
