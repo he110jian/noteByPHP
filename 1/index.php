@@ -8,8 +8,7 @@
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
 include_once("log.php");
-echo $_COOKIE['cookie'];
- if($_COOKIE['cookie']!='ok'){
+if($_COOKIE['cookie']!='ok'){
 ?>
 
 <script language="JavaScript" type="text/javascript">
