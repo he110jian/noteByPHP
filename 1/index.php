@@ -2,5 +2,5 @@
 echo "<h1>hello!<h1>";
 ?>
 
-<body bgcolor:red>
+<body bgcolor=red>
 </body>
