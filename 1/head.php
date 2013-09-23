@@ -1,2 +1,2 @@
 
-<a href='log.php?out=out'>LogOut</a><hr>
+<a href='log.php?out=out'><span align:right>LogOut</span></a><hr>
