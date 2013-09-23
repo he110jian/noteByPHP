@@ -22,7 +22,7 @@ if(!isset($_COOKIE["login"]))
   }
 </script>
 <div align="center">
-  <form name="form2" action="log.php" method="post" onsubmit="return Checklogin()" >
+  <form name="form2" action="index.php?action=login" method="post" onsubmit="return Checklogin()" >
 <br/>
       Password:
   <input type="password" name="password" /><br />
