@@ -30,7 +30,7 @@ if($_COOKIE['cookie']!='ok'){
 <div align="center">
   <form name="form2" action="index.php?action=login" method="post" onsubmit="return Checklogin()" >
 <br/>
-      Password:
+      Password:啊啊啊是啊
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
   </form>
