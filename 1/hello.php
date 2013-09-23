@@ -1,7 +1,7 @@
 
 <?php
 //判断登录
-if(($_COOKIE['cookie'])=='ok')
+if(isset($_COOKIE['cookie']))
 {
 	echo "<meta http-equiv=\"refresh\" content=\"3;url=index.php\"> illegal!<a href=\"index.php\">return</a>...";
 } 
