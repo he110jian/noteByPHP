@@ -32,7 +32,7 @@ body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
 #header { padding:3px; background:#6cf; margin-bottom:5px;}
 #menu { height:30px; background:#09c; margin-bottom:5px;}
 #mainContent { background:url(bg.gif) right 0 repeat-y; overflow:auto;zoom:1; margin-bottom:5px;}
-#sidebar { float:right; width:200px; background:#9ff;}
+#sidebar { float:right; width:200px; background:#a88462;}
 #content { float:left; width:675px; padding:10px; background:#f3f8f1;}
 #footer { height:60px; background:#177cb0;}
 .clearfloat { clear:both; height:0; font-size: 1px; line-height: 0px;}
