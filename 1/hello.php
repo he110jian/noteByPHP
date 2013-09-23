@@ -22,17 +22,17 @@ if(isset($_COOKIE["login"]))
 <div id="mainContent">
 <div id="sidebar">This is the sidebar<br />
 <br />
-This is the sidebar<br />
+Monday <br />
 <br />
-This is the sidebar<br />
+Tuesday <br />
 <br />
-This is the sidebar<br />
+Wednesday<br />
 <br />
-This is the sidebar<br />
+Thursday<br />
 <br />
-This is the sidebar<br />
+Friday<br />
 <br />
-This is the sidebar<br />
+Sunday <br />
 </div>
 <div id="content">
 <h4>
