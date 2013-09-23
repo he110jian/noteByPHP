@@ -11,7 +11,7 @@ if(isset($_COOKIE["login"]))
         <script src="js/prototype.lite.js" type="text/javascript"></script>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
     </head>
-        <body>
+        <body style="font-color:white;">
 <div id="div1"><img src="../js/1.jpg" /></div>   
         <body>
 <div id="container">
@@ -72,7 +72,8 @@ This is the sidebar<br />
   <br class="clearfloat" />
   <div id="footer">This is the footer</div>
 </div>
-</body></html>
+</body>
+</html>
 <?
 } 
 else 
