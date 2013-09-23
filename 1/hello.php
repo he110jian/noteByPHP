@@ -16,6 +16,6 @@ if(isset($_COOKIE["login"]))
 } 
 else 
 {   
-	echo "<meta http-equiv=\"refresh\" content=\"3;url=index.php\"> illegal!<a href=\"index.php\">return</a>...";
+	echo $_COOKIE["login"]."<meta http-equiv=\"refresh\" content=\"3;url=index.php\"> illegal!<a href=\"index.php\">return</a>...";
 }
 ?>
