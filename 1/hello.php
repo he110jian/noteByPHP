@@ -47,25 +47,7 @@ HAVE completed class listening and the homework seriously;
 read some related books.
 </li>
 </ul>
-<h4>
-Studying Plan For The Second Week @2013.9.9-2013.9.15:
-</h4>
-<ul style="color:red">
-<li> 
-TO complete class listening and the homework seriously;
-</li>
-<li> 
-determine research area;
-</li>
-<li> 
-finish reading a relevant paper;
-</li>
-<li> 
-read some related books.
-</li>
-</ul>
-<h5>
---By HeJian
+
 </h5>
 </div>
 </div>
