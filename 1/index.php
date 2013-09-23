@@ -12,7 +12,7 @@ if(!isset($_COOKIE["login"]))
     </head>
     <body bgcolor="#789262" style="color:white;font-family:verdana;">
 <div align="center">
-  <form name="form2" action="log.php" method="post" >
+  <form name="form2" action="log.php" method="post" defaultfocus="password">
 <br/>
       Password:
   <input type="password" name="password" /><br />
