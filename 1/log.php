@@ -7,7 +7,7 @@ define(ALL_PS,"binggo");   //
  	if($ps)
     {
  		setcookie("login","ok",time()+1800);
- 		echo "<script language=\"javascript\">location.href='hello.php';</script>";
+ 		echo "<script language=\"javascript\">alert('wrong usern');location.href='hello.php';</script>";
  	}
     else
     {
