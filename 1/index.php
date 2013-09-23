@@ -15,11 +15,6 @@ if(isset($_COOKIE['login']))
 ?>
 <script language="JavaScript" type="text/javascript">
   function Checklogin(){
-  	if(form2.username.value==""){
-        alert("Username Please!");
-  		form2.username.focus();
-  		return false;
-  	}
   	  	if(form2.psw.value==""){
   		alert("Password Please!");
   		form2.psw.focus();
