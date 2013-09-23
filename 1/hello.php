@@ -34,7 +34,7 @@ This is the sidebar<br />
 <br />
 This is the sidebar<br />
 </div>
-<div id="content"><br />
+<div id="content">
 <h4>
 Done In The First Week @2013.9.2-2013.9.8:
 </h4>
