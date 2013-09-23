@@ -27,13 +27,11 @@ if($_COOKIE['cookie']!='ok'){
 </script>
 <div align="center">
   <form name="form2" action="index.php?action=login" method="post" onsubmit="return Checklogin()" >
-      Username:
-  <input type="text" name="username" /><br/>
+<br/>
       Password:
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
   <input type="submit" name="submit" value="LogOn"/>
-  <input type="reset" name="reset" value="Reset"/>
 
   </form>
     </div>
