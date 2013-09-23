@@ -15,7 +15,7 @@ include_once("head.php");
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
          <title>Home</title>
     </head>
-    <body><H1>WELCOME!<H1></body></html>
+    <body><H1>WELCOME 您!<H1></body></html>
         <?
 }
 ?>
