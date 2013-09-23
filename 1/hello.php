@@ -12,6 +12,7 @@ if(isset($_COOKIE["login"]))
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
 </head>
 <body>
+<br/><br/>
 <div id="div1"><img src="../js/1.jpg" /></div>   
 <div id="container">
 <div id="header">This is the Header</div>
