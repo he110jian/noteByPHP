@@ -10,9 +10,9 @@
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
 include_once("log.php");
-if($_COOKIE['cookie']!='ok'){
+if($_COOKIE['cookie']!='ok')
+{
 ?>
-
 <script language="JavaScript" type="text/javascript">
   function Checklogin(){
   	if(form2.username.value==""){
@@ -36,8 +36,9 @@ if($_COOKIE['cookie']!='ok'){
   </form>
     </div>
   <?php
- }else{
-  echo "<meta http-equiv=\"refresh\" content=\"3;url=log.php\">waittong for 3seconds ...";
+ }
+else{
+  echo "<meta http-equiv=\"refresh\" content=\"3;url=hello.php\">waittong for 3seconds ...";
  }
 ?>
 </body>
