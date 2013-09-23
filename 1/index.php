@@ -10,8 +10,7 @@
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
 include_once("log.php");
-echo $_COOKIE["user"]
-if(!isset($_COOKIE['login']))
+if(!isset($_COOKIE["login"]))
 {
 ?>
 <script language="JavaScript" type="text/javascript">
