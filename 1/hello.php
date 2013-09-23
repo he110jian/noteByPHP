@@ -13,7 +13,8 @@ if(isset($_COOKIE["login"]))
         <script src="js/prototype.lite.js" type="text/javascript"></script>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
     </head><body style="color:white;font-family:verdana">
-<div id="div1"><img src="../js/1.jpg" /></div>    
+<div id="div1"><img src="../js/1.jpg" /></div>   
+        <hr/>
             <H1>WELCOME 您!<H1></body></html>
             <?
 } 
