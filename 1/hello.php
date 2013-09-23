@@ -14,7 +14,7 @@ if(isset($_COOKIE["login"]))
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
     </head><body style="color:white;font-family:verdana">
 <div id="div1"><img src="../js/1.jpg" /></div>   
-        <hr/>
+  
             <H1>WELCOME 您!<H1></body></html>
             <?
 } 
