@@ -26,14 +26,7 @@ This is the sidebar<br />
 <br />
 This is the sidebar<br />
 <br />
-This is the sidebar<br />
-<br />
-This is the sidebar<br />
-<br />
-This is the sidebar<br />
-<br />
-This is the sidebar<br />
-<br />
+
 </div>
 <div id="content">2列右窄左宽、高度自适应且未知高度底部平齐+头部+导航+尾部——<a href="http://www.aa25.cn">标准之路www.aa25.cn</a><br />
 <h4>
