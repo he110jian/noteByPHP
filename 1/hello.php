@@ -27,7 +27,6 @@ if(isset($_COOKIE["login"]))
 			read some related books.
 			</li>
 		</ul>
-		<hr>
 		<h4>
 		Studying Plan For The Second Week @2013.9.9-2013.9.15:
 		</h4>
@@ -46,7 +45,6 @@ if(isset($_COOKIE["login"]))
 			</li>
 		</ul>
 		<h5>
-		<hr>
 		--By HeJian
 		</h5>
 	</div>
