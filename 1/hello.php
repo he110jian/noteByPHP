@@ -10,9 +10,6 @@ if(isset($_COOKIE["login"]))
 <title>Home</title>
 <script src="js/prototype.lite.js" type="text/javascript"></script>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
-    <script type="text/javascript" src="./js2/mootools.js"></script>
-<script type="text/javascript" src="./js2/accordions.js"></script>
-<link href="./js2/accordions.css" type="text/css" rel="stylesheet"  />
 </head>
 <body>
 <br/><br/>
@@ -38,43 +35,37 @@ Friday<br />
 Sunday <br />
 </div>
 <div id="content">
-<div >
-<p class="accToggler" style="background-color: rgb(104, 153, 206); ">Click me!</p>
-	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		asdasdaaaaaaaaaaaaaaaaasadddddddddddsaddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-
-	</p>
-
-<p class="accToggler" style="background-color: rgb(194, 220, 114); ">Click me!</p>
-	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		a2dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsaddd
-
-	</p>
-</div>
-
-<div>
-<p class="accToggler_x" style="background-color: rgb(104, 153, 206); ">Click me!</p>
-	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		a3dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsaddd
-	</p>
-
-<p class="accToggler_x" style="background-color: rgb(194, 220, 114); ">Click me!</p>
-	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility:visible; height: 120px; opacity: 1;">
-		a4dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsaddd
-
-	</p>
-
-	</div>
+<h4>
+Done In The First Week @2013.9.2-2013.9.8:
+</h4>
+<ul style="color:green">
+<li> 
+HAVE completed class listening and the homework seriously;
+</li>
+<li> 
+read some related books.
+</li>
+</ul>
+<h4>
+Studying Plan For The Second Week @2013.9.9-2013.9.15:
+</h4>
+<ul style="color:red">
+<li> 
+TO complete class listening and the homework seriously;
+</li>
+<li> 
+determine research area;
+</li>
+<li> 
+finish reading a relevant paper;
+</li>
+<li> 
+read some related books.
+</li>
+</ul>
+<h5>
+--By HeJian
+</h5>
 </div>
 </div>
 <br class="clearfloat" />
