@@ -30,7 +30,7 @@ a:link {
 body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
 #container {margin:0 auto; width:900px;}
 #header { padding:3px; background:#6cf; margin-bottom:5px;}
-#menu { height:30px; background:; margin-bottom:5px;}
+#menu { height:30px; background:#a98175; margin-bottom:5px;}
 #mainContent { background:url(bg.gif) right 0 repeat-y; overflow:auto;zoom:1; margin-bottom:5px;}
 #sidebar { float:right; width:200px; background:#9ff;}
 #content { float:left; width:675px; padding:10px; background:#f3f8f1;}
