@@ -14,11 +14,16 @@ if(!isset($_COOKIE["login"]))
 ?>
 <script language="JavaScript" type="text/javascript">
   function Checklogin(){
-  	  	if(form2.psw.value==""){
-  		alert("Password Please!");
-  		form2.psw.focus();
-  		return false;
-  	}
+  	  	if(form2.psw.value=="")
+        {
+            alert("Password Please!");
+            form2.psw.focus();
+            return false;
+  		}
+      else
+      {
+          location.href='log.php';
+      }
   }
 </script>
 <div align="center">
