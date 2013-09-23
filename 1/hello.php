@@ -10,7 +10,8 @@ if(isset($_COOKIE["login"]))
              <title>Home</title>
         <script src="js/prototype.lite.js" type="text/javascript"></script>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
-    </head><body>
+    </head>
+        <body>
 <div id="div1"><img src="../js/1.jpg" /></div>   
         <body>
 <div id="container">
