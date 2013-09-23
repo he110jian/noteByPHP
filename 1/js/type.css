@@ -12,7 +12,7 @@ width:100%;
 border:0; 
 } 
 a:link {
-    color:#b9b612;
+    color:#FF0000;
     text-decoration:underline;
     }
     a:visited {
@@ -29,7 +29,7 @@ a:link {
     }
 body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
 #container {margin:0 auto; width:900px;}
-#header { padding:3px; background:#b9b612; margin-bottom:5px;}
+#header { padding:3px; background:#6cf; margin-bottom:5px;}
 #menu { height:30px; background:#09c; margin-bottom:5px;}
 #mainContent { background:url(bg.gif) right 0 repeat-y; overflow:auto;zoom:1; margin-bottom:5px;}
 #sidebar { float:right; width:200px; background:#9ff;}
