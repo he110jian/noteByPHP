@@ -1,7 +1,7 @@
 
 <?php
 //判断登录
-if(isset($_COOKIE['login']))
+if(isset($_COOKIE["login"]))
 {
     include_once("head.php");
     ?>
