@@ -1,6 +1,5 @@
 
 <?php
-session_start();
 //判断登录
 if(($_COOKIE['cookie'])=="ok")
 {
