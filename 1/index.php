@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login</title>
     </head>
-    <body style="color:white;font-family:verdana;bgcolor:#789262">
+    <body style="color:white;font-family:verdana;bgcolor='#789262'">
 <?php
 if(!isset($_COOKIE["login"]))
 {
