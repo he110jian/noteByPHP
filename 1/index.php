@@ -9,7 +9,7 @@
     </head><body style="color:white">
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
-include_once('log.php');
+include 'log.php';
 if(!isset($_COOKIE["login"]))
 {
 ?>
