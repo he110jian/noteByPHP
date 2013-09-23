@@ -20,7 +20,7 @@ if(isset($_COOKIE["login"]))
 <div id="menu">&nbsp;Plan For This Week</div>
 <br class="clearfloat" />
 <div id="mainContent">
-<div id="sidebar">This is the sidebar<br />
+<div id="sidebar">
 <br />
 Monday <br />
 <br />
