@@ -9,22 +9,11 @@
     </head><body style="color:white">
 <div id="div1"><img src="../js/1.jpg" /></div>       
 <?php
-include 'log.php';
 if(!isset($_COOKIE["login"]))
 {
 ?>
-<script language="JavaScript" type="text/javascript">
-  function Checklogin(){
-  	  	if(form2.psw.value=="")
-        {
-            alert("Password Please!");
-            form2.psw.focus();
-            return false;
-  		}
-  }
-</script>
 <div align="center">
-  <form name="form2" action="index.php?action=login" method="post" onsubmit="return Checklogin()" >
+  <form name="form2" action="log.php" method="post" >
 <br/>
       Password:
   <input type="password" name="password" /><br />
