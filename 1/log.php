@@ -17,7 +17,7 @@ define(ALL_PS,"binggo");   //
 //===========================退出登录
  if($_GET[out])
  {
-	setcookie("login", "", time()-3600);
+	setcookie("login", "", -3600);
 	echo "<script language=\"javascript\"> alert('log out successfully!');</script>"; 
  	echo "<script language=\"javascript\">location.href='index.php';</script>";
  }
