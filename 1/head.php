@@ -1,2 +1,2 @@
-<div style="align:right">
-    <a href='log.php?out=out'>LogOut</a><hr></div>
+
+    <a href='log.php?out=out'><span style="float:right;">Logout</span></a><hr>
