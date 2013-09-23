@@ -15,9 +15,9 @@ if(isset($_COOKIE["login"]))
 <br/><br/>
 <div id="div1"><img src="../js/1.jpg" /></div>   
 <div id="container">
-<div id="header">WELCOME<span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span></div>
+<div id="header">&nbsp;WELCOME<span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span></div>
 <br class="clearfloat" />
-<div id="menu">Plan For This Week</div>
+<div id="menu">&nbsp;Plan For This Week</div>
 <br class="clearfloat" />
 <div id="mainContent">
 <div id="sidebar">This is the sidebar<br />
