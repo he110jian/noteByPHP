@@ -14,7 +14,7 @@ if(isset($_COOKIE["login"]))
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
     </head><body style="color:white;font-family:verdana">
 <div id="div1"><img src="../js/1.jpg" /></div>   
-        <br/><br/>
+        <br/><hr/>
         <div>
 		<h4>
 		Done In The First Week @2013.9.2-2013.9.8:
