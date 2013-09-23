@@ -31,8 +31,6 @@ if($_COOKIE['cookie']!='ok'){
       Password:
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
-  <input type="submit" name="submit" value="LogOn"/>
-
   </form>
     </div>
   <?php
