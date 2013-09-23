@@ -20,10 +20,6 @@ if(!isset($_COOKIE["login"]))
             form2.psw.focus();
             return false;
   		}
-      else
-      {
-          location.href='log.php';
-      }
   }
 </script>
 <div align="center">
