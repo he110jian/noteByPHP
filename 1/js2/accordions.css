@@ -1,6 +1,5 @@
 
 *{padding:0px; margin:0px;}
-body{font-size:11px; font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d6d;}
 .accToggler{
 	margin: 3px auto;
 	padding: 3px;
@@ -27,6 +26,4 @@ body{font-size:11px; font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d
 	margin: 0px auto;
 	width: 400px;
 }
-a, a:visited{
-font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d6d;
-}
+
