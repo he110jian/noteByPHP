@@ -14,9 +14,43 @@ if(isset($_COOKIE["login"]))
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
     </head><body style="color:white;font-family:verdana">
 <div id="div1"><img src="../js/1.jpg" /></div>   
-  
-            <H1>WELCOME 您!<H1></body></html>
-            <?
+  	<div>
+		<h4>
+		Done In The First Week @2013.9.2-2013.9.8:
+		</h4>
+		<ul style="color:green">
+			<li> 
+			HAVE completed class listening and the homework seriously;
+			</li>
+			<li> 
+			read some related books.
+			</li>
+		</ul>
+		<hr>
+		<h4>
+		Studying Plan For The Second Week @2013.9.9-2013.9.15:
+		</h4>
+		<ul style="color:red">
+			<li> 
+			TO complete class listening and the homework seriously;
+			</li>
+			<li> 
+			determine research area;
+			</li>
+			<li> 
+			finish reading a relevant paper;
+			</li>
+			<li> 
+			read some related books.
+			</li>
+		</ul>
+		<h5>
+		<hr>
+		--By HeJian
+		</h5>
+	</div>
+</body></html>
+<?
 } 
 else 
 {   
