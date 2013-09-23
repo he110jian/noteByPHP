@@ -27,7 +27,7 @@ a:link {
     color:#FFFFFF;
     text-decoration:none;
     }
-body { font-family:Verdana; font color:white; font-size:14px; margin:0; line-height:150%;}
+body { font-family:Verdana; font-color:#ffffff; font-size:14px; margin:0; line-height:150%;}
 #container {margin:0 auto; width:900px;}
 #header { padding:3px;  margin-bottom:5px;}
 #menu { height:30px;  margin-bottom:5px;}
