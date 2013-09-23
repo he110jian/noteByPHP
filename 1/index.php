@@ -1,4 +1,9 @@
 
+
+<?php
+if(!isset($_COOKIE["login"]))
+{
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -6,10 +11,6 @@
 <title>Login</title>
     </head>
     <body bgcolor="#789262" style="color:white;font-family:verdana;">
-<?php
-if(!isset($_COOKIE["login"]))
-{
-?>
 <div align="center">
   <form name="form2" action="log.php" method="post" >
 <br/>
