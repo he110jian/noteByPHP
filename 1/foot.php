@@ -30,9 +30,9 @@ if(isset($_COOKIE["login"]))
   }
 </script>
 <div align="center">
-        <form name="form" action="#" method="post" onsubmit="return Check()" >
+
   <input style="WIDTH: 360px; HEIGHT:30px" type="text" name="things" />
-  </form>
+  <input type="hidden" tybe="button" name="sub1" value="" onclick()=Check()/>
         <br/>
     </div>
 <div>
