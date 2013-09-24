@@ -50,7 +50,7 @@ if(isset($_COOKIE["login"]))
 		dddddddsadddddddddddsaddd
 
 	</p>
-<p class="accToggler_x" style="background-color: rgb(194, 220, 114); ">兴趣爱好</p>
+<p class="accToggler_x" style="background-color: rgb(104, 153, 206); ">兴趣爱好</p>
 	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility:visible; height: 120px; opacity: 1;">
 		a4dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
 		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
