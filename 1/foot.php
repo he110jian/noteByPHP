@@ -17,16 +17,16 @@ if(isset($_COOKIE["login"]))
 <br/><br/><br/> 
     <script language="JavaScript" type="text/javascript">
   function Check(){
-  	if(form2.username.value=="")
+  	if(form2.things.value=="")
     {
-  		alert("请输入登录名");
-  		form2.username.focus();
+  		alert("write someting!");
+  		form2.things.focus();
   		return false;
   	}
   	else
     {
         var wri = getElementById("p1");
-        t1.innerHTML=form2.username.value;
+        t1.innerHTML=form2.things.value;
   	}
   }
 </script>
