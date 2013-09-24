@@ -13,9 +13,9 @@ if(isset($_COOKIE["login"]))
 <title>Accordio</title>
 </head>
 <body>
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
 <div >
-<p class="accToggler" style="background-color: rgb(104, 153, 206); ">Click me!</p>
+<p class="accToggler" style="background-color: rgb(104, 153, 206); ">基本信息</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 		asdasdaaaaaaaaaaaaaaaaasadddddddddddsaddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
 		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
 
 	</p>
 
-<p class="accToggler" style="background-color: rgb(194, 220, 114); ">Click me!</p>
+<p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 		a2dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
 		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
@@ -35,7 +35,7 @@ if(isset($_COOKIE["login"]))
 </div>
 
 <div>
-<p class="accToggler_x" style="background-color: rgb(104, 153, 206); ">Click me!</p>
+<p class="accToggler_x" style="background-color: rgb(104, 153, 206); ">获奖情况</p>
 	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 		a3dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
 		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
