@@ -36,8 +36,8 @@ if(isset($_COOKIE["login"]))
         <br/>
     </div>
 <div>
-<p class="accToggler" style="background-color: rgb(194, 220, 114); " id="p1">goal</p>
-	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
+<p class="accToggler" style="background-color: rgb(194, 220, 114); " >goal</p>
+	<p id="p1" class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
           rttr
 	</p>
 <p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
