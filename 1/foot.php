@@ -32,14 +32,6 @@ if(isset($_COOKIE["login"]))
 <div align="center">
 
   <input style="WIDTH: 360px; HEIGHT:30px" type="text" name="things" />
-    <input class="btn_l" type="image" alt="登录" src="img/login.gif" onclick="login();" onKeyDown="ctlent()">
-<script language="JavaScript" type="text/javascript">
-function ctlent(eventobject){
-if((event.ctrlKey&&window.event.keyCode==13)||window.event.keyCode==13)
-{login();return false;}
-else{return true;}}
-</script>
-
         <br/>
     </div>
 <div>
