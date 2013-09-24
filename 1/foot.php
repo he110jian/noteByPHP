@@ -17,7 +17,6 @@ if(isset($_COOKIE["login"]))
 <br/><br/><br/>
     <div align="center">
         <form name="form2" action="log.php" method="post" >
-     Write Here:
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
   </form>
