@@ -20,6 +20,7 @@ if(isset($_COOKIE["login"]))
   <input style="WIDTH: 360px; HEIGHT:30px" type="text" name="things" />
   <input type="hidden" name="sub1" value="sub1" />
   </form>
+        <br/>
     </div>
 <div>
 <p class="accToggler" style="background-color: rgb(194, 220, 114); ">goal</p>
