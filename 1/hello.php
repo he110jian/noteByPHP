@@ -69,7 +69,7 @@ read some related books.
 </div>
 </div>
 <br class="clearfloat" />
-<div id="footer"><p>&nbsp;
+    <div id="footer"><br/>&nbsp;
     <script type="text/javascript">
 var d =new Date();
 with(d)
@@ -77,7 +77,6 @@ with(d)
     document.write((getFullYear()+"年"+(getMonth()+1)+"月"+getDate()+"日星期"+getDay())+"<br/>&nbsp;&nbsp;"+getHours()+":"+getMinutes()+":"+getSeconds());
 }
 </script>
-    </p>
     </div>
 </div>
 </body>
