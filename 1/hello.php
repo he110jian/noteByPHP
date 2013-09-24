@@ -74,7 +74,7 @@ read some related books.
 var d =new Date();
 with(d)
 {
-  document.write((getYear()+"年"+(getMonth()+1)+"月"+getDate()+"日星期"+getDay()));
+  document.write((getFullYear()+"年"+(getMonth()+1)+"月"+getDate()+"日星期"+getDay()));
 }
 </script>
     
