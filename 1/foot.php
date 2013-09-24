@@ -18,12 +18,11 @@ if(isset($_COOKIE["login"]))
 <div >
 <p class="accToggler" style="background-color: rgb(104, 153, 206); ">基本信息</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		asdasdaaaaaaaaaaaaaaaaasadddddddddddsaddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-
+          <form name="form2" action="log.php" method="post" >
+      Write Here:
+  <input type="txt" name="things" /><br />
+  <input type="hidden" name="sub1" value="sub" />
+  </form>
 	</p>
 
 <p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
