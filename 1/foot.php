@@ -1,7 +1,7 @@
 <?php
 if(isset($_COOKIE["login"]))
 {
-//	include_once("head.php");
+//	include_once("head.php");104, 153, 206
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -16,7 +16,7 @@ if(isset($_COOKIE["login"]))
 <body>
 <br/><br/><br/>
 <div >
-<p class="accToggler" style="background-color: rgb(104, 153, 206); ">基本信息</p>
+<p class="accToggler" style="background-color: rgb(194, 220, 114); ">基本信息</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
           rttr
 	</p>
