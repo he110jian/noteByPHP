@@ -14,8 +14,8 @@ define(ALL_PS,"binggo");   //
  		echo "<script language=\"javascript\"> alert('wrong username or password!');location.href='index.php';</script>";
  	}
  }
-//===========================退出登录
- if($_GET[out])
+//===========================退出登录 
+if($_GET[out])
  {
 	setcookie("login", "",time() -3600);
 	echo "<script language=\"javascript\"> alert('log out successfully!');</script>"; 
