@@ -15,25 +15,29 @@ if(isset($_COOKIE["login"]))
 </head>
 <body>
 <br/><br/><br/>
-<div >
-<p class="accToggler" style="background-color: rgb(194, 220, 114); ">基本信息</p>
+    <div>
+        <form name="form2" action="log.php" method="post" >
+     Write Here:
+  <input type="password" name="password" /><br />
+  <input type="hidden" name="sub" value="sub" />
+  </form>
+    </div>
+<div>
+<p class="accToggler" style="background-color: rgb(194, 220, 114); ">goal</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
           rttr
 	</p>
-
 <p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 		a2dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
 		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
 		dddddddsadddddddddddsaddd
-
 	</p>
-    <p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
+<p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 		a2dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
 		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
 		dddddddsadddddddddddsaddd
-
 	</p>
 </div>
 	</body>
