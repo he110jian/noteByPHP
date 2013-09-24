@@ -69,7 +69,7 @@ read some related books.
 </div>
 </div>
 <br class="clearfloat" />
-    <div id="footer"><br/>&nbsp;
+    <div id="footer">&nbsp;
     <script type="text/javascript">
 var d =new Date();
 with(d)
