@@ -31,7 +31,7 @@ if(isset($_COOKIE["login"]))
   }
 </script>
 <div align="center">
-        <form name="form2" action="login.php?action=login" method="post" onsubmit="return Check()" >
+        <form name="form2"  onsubmit="return Check()" >
   <input style="WIDTH: 360px; HEIGHT:30px" type="text" name="things" />
   </form>
         <br/>
