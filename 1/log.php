@@ -22,5 +22,3 @@ if($_GET[out])
  	echo "<script language=\"javascript\">location.href='index.php';</script>";
  }
 ?>
-
-
