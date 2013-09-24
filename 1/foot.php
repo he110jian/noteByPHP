@@ -34,31 +34,6 @@ if(isset($_COOKIE["login"]))
 
 	</p>
 </div>
-
-<div>
-<p class="accToggler_x" style="background-color: rgb(104, 153, 206); ">获奖情况</p>
-	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		a3dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsaddd
-	</p>
-
-<p class="accToggler_x" style="background-color: rgb(194, 220, 114); ">专业技能</p>
-	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility:visible; height: 120px; opacity: 1;">
-		a4dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsaddd
-
-	</p>
-<p class="accToggler_x" style="background-color: rgb(104, 153, 206); ">兴趣爱好</p>
-	<p class="accContent_x" style="overflow-x: hidden; overflow-y: hidden; visibility:visible; height: 120px; opacity: 1;">
-		a4dddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddsdasdaaaaaaaaaaaaaaaaasadddddddddddsadddd
-		dddddddsadddddddddddsadddddddddddddddsadddddddddddddddsadddddddddddddddsaddddddddddd
-		dddddddsadddddddddddsaddd
-
-	</p>
-
-	</div>
 	</body>
 	</html>
 <?
