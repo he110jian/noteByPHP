@@ -69,7 +69,16 @@ read some related books.
 </div>
 </div>
 <br class="clearfloat" />
-<div id="footer">This is the footer</div>
+<div id="footer">
+    <script type="text/javascript">
+var d =new Date();
+with(d)
+{
+  alert(getYear()+"年"+(getMonth()+1)+"月"+getDate()+"日星期"+getDay());
+}
+</script>
+    
+    </div>
 </div>
 </body>
 </html>
