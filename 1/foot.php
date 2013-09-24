@@ -17,20 +17,20 @@ if(isset($_COOKIE["login"]))
 <br/><br/><br/> 
     <script language="JavaScript" type="text/javascript">
   function Check(){
-  	if(form2.things.value=="")
+  	if(form.things.value=="")
     {
   		alert("write someting!");
-  		form2.things.focus();
+  		form.things.focus();
   		return false;
   	}
   	else
     {
-        document.getElementById("p1").innerHTML=form2.things.value;
+        document.getElementById("p1").innerHTML=form.things.value;
   	}
   }
 </script>
 <div align="center">
-        <form name="form2" action="#" method="post" onsubmit="return Check()" >
+        <form name="form" action="#" method="post" onsubmit="return Check()" >
   <input style="WIDTH: 360px; HEIGHT:30px" type="text" name="things" />
   </form>
         <br/>
