@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
   	}
   	else
     {
-        document.getElementById("p1").innerHTML = form.things.value;
+        document.getElementById("p1").innerText = form.things.value;
   	}
   }
 </script>
