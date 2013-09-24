@@ -14,16 +14,30 @@ if(isset($_COOKIE["login"]))
 <title>PersonInfo</title>
 </head>
 <body>
-<br/><br/><br/>
-    <div align="center">
-        <form name="form2" action="log.php" method="post" >
+<br/><br/><br/> 
+    <script language="JavaScript" type="text/javascript">
+  function Check(){
+  	if(form2.username.value=="")
+    {
+  		alert("请输入登录名");
+  		form2.username.focus();
+  		return false;
+  	}
+  	else
+    {
+        var wri = getElementById("p1");
+        t1.innerHTML=form2.username.value;
+  	}
+  }
+</script>
+<div align="center">
+        <form name="form2" action="login.php?action=login" method="post" onsubmit="return Check()" >
   <input style="WIDTH: 360px; HEIGHT:30px" type="text" name="things" />
-  <input type="hidden" name="sub1" value="sub1" />
   </form>
         <br/>
     </div>
 <div>
-<p class="accToggler" style="background-color: rgb(194, 220, 114); ">goal</p>
+<p class="accToggler" style="background-color: rgb(194, 220, 114); " id="p1">goal</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
           rttr
 	</p>
