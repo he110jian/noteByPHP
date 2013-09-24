@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
   	}
   	else
     {
-        document.getElementById("p1").innerText = form.things.value;
+        document.getElementById("p1").innerText = "asasa";
   	}
   }
 </script>
@@ -38,6 +38,7 @@ if(isset($_COOKIE["login"]))
 <div>
 <p class="accToggler" style="background-color: rgb(194, 220, 114); " >goal</p>
 	<p id="p1" class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
+        l
 	</p>
 <p class="accToggler" style="background-color: rgb(194, 220, 114); ">项目经历</p>
 	<p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
