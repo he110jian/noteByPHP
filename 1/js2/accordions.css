@@ -4,7 +4,7 @@ body{font-size:11px; font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d
 .accToggler{
 	margin: 3px auto;
 	padding: 3px;
-	width: 700px;
+	width: 400px;
 	background: #acc95f;
 	color: #f4f4f4;
 	border: 1px solid #fff;
@@ -12,12 +12,12 @@ body{font-size:11px; font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d
 }
 .accContent{
 	margin: 0px auto;
-	width: 700px;
+	width: 400px;
 }
 .accToggler_x{
 	margin: 3px auto;
 	padding: 3px;
-	width: 700px;
+	width: 400px;
 	background: #acc95f;
 	color: #f4f4f4;
 	border: 1px solid #fff;
@@ -25,7 +25,7 @@ body{font-size:11px; font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d
 }
 .accContent_x{
 	margin: 0px auto;
-	width: 700px;
+	width: 400px;
 }
 a, a:visited{
 font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d6d;
