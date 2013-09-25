@@ -30,6 +30,7 @@ border:0;
 }
 div#fom{
 text-align:center;
+    top:60px;
 z-index:9;
 }
 div#header-bg{
