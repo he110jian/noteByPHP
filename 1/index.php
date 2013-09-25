@@ -10,7 +10,7 @@ if(!isset($_COOKIE["login"]))
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Login</title>
     </head>
-    <body bgcolor="#789262" style="color:white;font-family:verdana;">
+    <body  style="color:white;font-family:verdana;">
         <div id="div1"><img src="../js/public-bg9.jpg" /></div>   
 <div align="center">
   <form name="form2" action="log.php" method="post" >
