@@ -19,7 +19,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 27px;
-height: 100%;z-index:9;
+height: 100%;
 background-color: #000;
 opacity: 0.10;
 }
@@ -29,7 +29,6 @@ top: 0;
 left: 0;
 padding: 8px 5px;
 width: 18px;
-z-index:11;
 font-size: 12px;
 line-height: 14px;
 }
