@@ -14,6 +14,7 @@ if(!isset($_COOKIE["login"]))
     <body  style="color:white;font-family:verdana;">
         <div id="div1"><img src="../js/public-bg9.jpg" /></div>   
         <div id="header-bg"></div>
+        <div id="header-fading "></div>
 <div id="fom">
   <form name="form2" action="log.php" method="post" >
 <br/>
