@@ -13,6 +13,7 @@ if(!isset($_COOKIE["login"]))
     </head>
     <body  style="color:white;font-family:verdana;">
         <div id="div1"><img src="../js/public-bg9.jpg" /></div>   
+        <div id="right"></div>
         <div id="header-bg"></div>
         <div id="header-fading"></div>
 <div id="fom">
