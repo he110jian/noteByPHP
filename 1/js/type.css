@@ -5,7 +5,11 @@ left:0;
 bottom:0; 
 right:0; 
 z-index:-19; 
-} 
+}
+div#right-wrapper{
+position: relative;
+width: 100%;
+}
 div#div1 > img { 
 height:100%; 
 width:100%; 
