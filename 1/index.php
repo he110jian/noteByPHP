@@ -13,7 +13,7 @@ if(!isset($_COOKIE["login"]))
     </head>
     <body  style="color:white;font-family:verdana;">
         <div id="div1"><img src="../js/public-bg9.jpg" /></div>   
-        <div id="right"><div class="shortcut-text"><a href="http://baidu.com" target="_blank">百度一下</a></div></div>
+        <div id="right"><div class="shortcut-text"><div class="shortcut-bg"></div><a href="http://baidu.com" target="_blank">百度一下</a></div></div>
         <div id="header-bg"></div>
         <div id="header-fading"></div>
 <div id="fom">
