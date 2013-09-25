@@ -11,6 +11,7 @@ if(!isset($_COOKIE["login"]))
 <title>Login</title>
     </head>
     <body bgcolor="#789262" style="color:white;font-family:verdana;">
+        <div id="div1"><img src="../js/public-bg9.jpg" /></div>   
 <div align="center">
   <form name="form2" action="log.php" method="post" >
 <br/>
