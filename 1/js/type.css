@@ -11,6 +11,10 @@ height:100%;
 width:100%; 
 border:0; 
 }
+div#fom{
+text-align:center; 
+z-index:2;
+}
 div#header-bg{
 position: absolute;
 left:0;
