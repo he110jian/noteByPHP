@@ -21,7 +21,7 @@ if(!isset($_COOKIE["login"]))
   <input type="password" name="password" /><br />
   <input type="hidden" name="sub" value="sub" />
   </form>
-    </div>
+</div>
   <?php
  }
 else{
