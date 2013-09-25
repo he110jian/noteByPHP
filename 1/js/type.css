@@ -13,6 +13,7 @@ position: fixed;
 right: 0;
 width: 27px;
 text-align: center;
+    opacity:0.4;
 }
 .shortcut-text {
 position: absolute;
