@@ -12,11 +12,8 @@ width:100%;
 border:0; 
 }
 div#fom{
-text-align:center; 
+text-align:center;
 z-index:9;
-}
-.clearfix {
-zoom:1;
 }
 div#header-bg{
 position: absolute;
