@@ -29,7 +29,7 @@ width:100%;
 border:0; 
 }
 div#fom{
-position: fixed;
+position: absolute;
 text-align:center;
 top:60px;
 z-index:9;
