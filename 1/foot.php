@@ -16,6 +16,13 @@ if(isset($_COOKIE["login"]))
 <body>
 <br/>
     <p><a href="add.php">添加留言</a></p>
+    <br/><br/> 
+
+<div>
+    <p class="accToggler" style="background-color: rgb(194, 220, 114); ">about</p>
+	<p id="p1" class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
+		details
+	</p>
 <?php
 $dom=new DOMDocument('1.0','gb2312');   
 $dom->load("data.xml");       //加载
@@ -28,16 +35,7 @@ if($message_count==0){
  echo "暂时没有留言\n";
 }
   else{
-?>
 
-<br/><br/> 
-
-<div>
-    <p class="accToggler" style="background-color: rgb(194, 220, 114); ">about</p>
-	<p id="p1" class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		details
-	</p>
-<?php
   
  for($i=$message_count-1;$i>=0;$i--)    //我们需要对留言按倒序排列
  {
