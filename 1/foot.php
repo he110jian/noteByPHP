@@ -84,7 +84,15 @@ if($message_count==0){
         ?>
 	</p>
 
-</div>
+</div>    <div id="footer">&nbsp;
+    <script type="text/javascript">
+var d =new Date();
+with(d)
+{
+    document.write((getFullYear()+"年"+(getMonth()+1)+"月"+getDate()+"日星期"+getDay())+"<br/>&nbsp;&nbsp;"+getHours()+":"+getMinutes()+":"+getSeconds());
+}
+</script>
+    </div>
 	</body>
 	</html>
 <?
