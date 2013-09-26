@@ -26,7 +26,8 @@ $message_count=$message->length;   //计算有多少条留言
 echo "当前共有".$message_count."条留言";
 if($message_count==0){
  echo "暂时没有留言\n";
-}else{
+}
+else{
 ?>
 
 <br/><br/> 
@@ -34,9 +35,9 @@ if($message_count==0){
 <div>
     <p class="accToggler" style="background-color: rgb(194, 220, 114); ">about</p>
 	<p id="p1" class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
-		detatil
+		details
 	</p>
-        <?php
+<?php
  for($i=$message_count-1;$i>=0;$i--)    //我们需要对留言按倒序排列
  {
   $msg=$message->item($i);
@@ -69,12 +70,12 @@ if($message_count==0){
    }
 
   }?>
-<p class="accToggler" style="background-color: rgb(194, 220, 114); " ><?echo $id.">".base64_decode($title)." - ".base64_decode($author)." [".$addtime."] ";  
+<p class="accToggler" style="background-color: rgb(194, 220, 114); " ><? echo $id.">".base64_decode($title)." - ".base64_decode($author)." [".$addtime."] ";  
    echo "[<a href='del.php?id=".$id."'>删除</a>]";?>
 </p>
     <p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 	
- <?       echo "<tr><td align=left>".base64_decode($content)."</td></tr>";
+ <?       echo base64_decode($content);
   if($photo!="NONE")
   {
       echo "<br/><img src='upfile/".base64_decode($photo)."'>";
