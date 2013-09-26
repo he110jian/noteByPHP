@@ -15,7 +15,7 @@ if(isset($_COOKIE["login"]))
 </head>
 <body>
 <br/>
-    <p><a href="add.php">添加留言</a></p>
+    <p><a href="add.php">添加留言</a></p><span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span>
     <br/><br/> 
 
 <div>
