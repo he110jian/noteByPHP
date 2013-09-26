@@ -82,7 +82,8 @@ if($message_count==0){
       echo "<br/><img src='upfile/".base64_decode($photo)."'>";
   }
  }
-  }?>
+  }
+        ?>
 	</p>
 
 </div>
