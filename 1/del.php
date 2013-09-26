@@ -11,9 +11,6 @@
    if($photo!="NONE"){   //如果留言包含图片，还应该将图片删除
     $photo_path="upfile/".base64_decode($photo);
     $flag=unlink($photo_path);
-    if($flag){
-     echo "删除图片成功<br>";
-    }
    }
    $root->removeChild($msg);
    break;
