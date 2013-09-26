@@ -54,6 +54,7 @@ if(!$_POST["author"] || !$_POST["content"])
 //获取其他表单域
  $author=base64_encode($_POST["author"]);   
  $content=base64_encode(ereg_replace("\r\n","<br>",$_POST["content"]));
+ $smiles=base64_encode($_POST["smiles"]);
  if($_POST["title"]){
   $title=base64_encode($_POST["title"]);
  }else{
@@ -89,7 +90,7 @@ if(!$_POST["author"] || !$_POST["content"])
  $el_photo->appendChild($dom->createTextNode($photo));
  $dom->save("data.xml");  //保存XML
 
- echo "<meta http-equiv=\"refresh\" content=\"2;url=foot.php\">\n";
+ echo "<meta http-equiv=\"refresh\" content=\"2;url=index.php\">\n";
  echo "谢谢您的留言，2秒钟返回首页";
 }
 ?>
