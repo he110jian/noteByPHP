@@ -27,7 +27,7 @@ echo "当前共有".$message_count."条留言";
 if($message_count==0){
  echo "暂时没有留言\n";
 }
-else{
+
 ?>
 
 <br/><br/> 
@@ -38,6 +38,7 @@ else{
 		details
 	</p>
 <?php
+else{
  for($i=$message_count-1;$i>=0;$i--)    //我们需要对留言按倒序排列
  {
   $msg=$message->item($i);
