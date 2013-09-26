@@ -80,7 +80,8 @@ else{
   {
       echo "<br/><img src='upfile/".base64_decode($photo)."'>";
   }
- }?>
+ }
+        }?>
 	</p>
 
 </div>
