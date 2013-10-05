@@ -18,14 +18,4 @@
  }
  $dom->save("data.xml");
 
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Add</title>
-    </head>
-    <body><p>
-        删除留言成功，2秒钟返回首页</p>
-    </body></html>
-<meta http-equiv="refresh" content="2;url=foot.php">
+header("Location:foot.php");?>
