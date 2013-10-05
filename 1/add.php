@@ -7,7 +7,7 @@ if(isset($_COOKIE["login"]))
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 <link href="js/type.css" type="text/css" rel="stylesheet"  />
-        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Add</title>
     </head>
     <body>
