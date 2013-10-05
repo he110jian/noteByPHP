@@ -1,10 +1,6 @@
+
 <?php
-if(!$_POST["author"] || !$_POST["content"]) 
-{
- echo "<meta http-equiv=\"refresh\" content=\"2;url=index.php\">\n";
- echo "你没有填写留言姓名或内容，2秒钟返回首页";
- exit();
-}else{
+
  $imgflag=0;   //用于判断是否需要上传图片
  function random($length)   //此函数用于生成一个随机的图片文件名（不含扩展名），以防止与现有图片重复
  { 
@@ -42,11 +38,11 @@ if(!$_POST["author"] || !$_POST["content"])
     $uploadfile=$uploaddir.$randname; 
    } while(file_exists($uploadfile));
    if (move_uploaded_file($_FILES['upfile']['tmp_name'],$uploadfile)){   //保存上传的图片到upfile文件夹
-    echo "上传图片成功"; 
+ //  echo '<script language=JavaScript> alert("上传图片成功"); </script>';
     $imgflag=1;
    } 
    else{ 
-    echo "上传图片失败！"; 
+       echo '<script language=JavaScript> alert("上传图片失败！"); </script>';
     $imgflag=0;
    }
   }
@@ -82,6 +78,8 @@ if(!$_POST["author"] || !$_POST["content"])
  $el_author->appendChild($dom->createTextNode($author));
  $el_title=$message->appendChild(new DOMElement('title'));
  $el_title->appendChild($dom->createTextNode($title));
+ $el_smiles=$message->appendChild(new DOMElement('smiles'));
+ $el_smiles->appendChild($dom->createTextNode($smiles));
  $el_content=$message->appendChild(new DOMElement('content'));
  $el_content->appendChild($dom->createTextNode($content));
  $el_addtime=$message->appendChild(new DOMElement('addtime'));
@@ -90,7 +88,12 @@ if(!$_POST["author"] || !$_POST["content"])
  $el_photo->appendChild($dom->createTextNode($photo));
  $dom->save("data.xml");  //保存XML
 
- echo "<meta http-equiv=\"refresh\" content=\"2;url=index.php\">\n";
- echo "谢谢您的留言，2秒钟返回首页";
-}
+?>
+  	<script language="JavaScript" type="text/javascript">
+window.opener.location.reload();
+</script>
+
+<?
+echo "<script language=JavaScript> alert('提交成功!'); </script>";
+	echo '<script language=JavaScript> window.close(); </script>';
 ?>
