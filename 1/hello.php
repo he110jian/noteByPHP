@@ -24,7 +24,7 @@ if(isset($_COOKIE["login"]))
 <br />
 Monday <br />
 <br />
-Tuesday <br />
+Tuesday x\、、性<br />
 <br />
 Wednesday<br />
 <br />
