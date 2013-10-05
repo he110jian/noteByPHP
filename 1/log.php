@@ -6,8 +6,8 @@ define(ALL_PS,"binggo");   //
  	$ps=md5($_POST[password].ALL_PS)=="e18f8200bbe2fb0b0176a3b5c6228d3e";
  	if($ps)
     {
- 		setcookie("login","ok",time()+1800);
- 		echo "<script language=\"javascript\">location.href='hello.php';</script>";
+ 		setcookie("login","ok",time()+3600);
+ 		echo "<script language=\"javascript\">location.href='foot.php';</script>";
  	}
     else
     {
@@ -18,7 +18,7 @@ define(ALL_PS,"binggo");   //
 if($_GET[out])
  {
 	setcookie("login", "",time() -3600);
-	echo "<script language=\"javascript\"> alert('log out successfully!');</script>"; 
+//	echo "<script language=\"javascript\"> alert('log out successfully!');</script>"; 
  	echo "<script language=\"javascript\">location.href='index.php';</script>";
  }
 ?>
