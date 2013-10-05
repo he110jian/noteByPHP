@@ -10,8 +10,16 @@ div#right{
 top: 130px;
 height: 70px;
 position: fixed;
+z-index:19; 
 right: 0;
 width: 27px;
+text-align: center;
+}
+div#music{
+top: 220px;
+position: fixed;
+z-index:19; 
+left: 0;
 text-align: center;
 }
 .shortcut-bg {
@@ -47,6 +55,7 @@ position: absolute;
 left:0;
 z-index:-9;
 width:100%;
+top:0px;
 height:90px;
 background-color:#000000;
 opacity:0.4;
@@ -66,18 +75,18 @@ a:link {
     text-decoration:none;
     }
     a:visited {
-    color:#00ffff;
+    color:#ff0000;
     text-decoration:none;
     }
     a:hover {
-    color:#000000;
+    color:#0000ff;
     text-decoration:none;
     }
     a:active {
-    color:#FFFFFF;
+    color:#00ffff;
     text-decoration:none;
     }
-body { font-family:Verdana; font-size:14px; margin:0; line-height:150%;}
+body{font-size:13px; font-family:"Lucida Grande", Arial, sans-serif; color:#6d6d6d;}
 #container {margin:0 auto; width:900px;}
 #header { padding:3px; background:#6cf; margin-bottom:5px;}
 #menu { height:30px; background:#a98175; margin-bottom:5px;}
