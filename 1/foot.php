@@ -21,7 +21,7 @@ if(isset($_COOKIE["login"]))
 </div>
 
         <div id="div1"><img src="js/public-bg9.jpg" /></div>   
-        <div id="right"><div class="shortcut-bg"></div><div class="shortcut-text"><a href="http://baidu.com" target="_blank">百度一下</a></div></div>
+        <div id="right"><div class="shortcut-bg"></div><a href="http://baidu.com" target="_blank"><div class="shortcut-text">百度一下</div></a></div>
         <div id="header-bg"></div>
         <div id="header-fading"></div> 
 <div style="top: 20px;
