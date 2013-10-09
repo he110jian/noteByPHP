@@ -67,7 +67,7 @@
  }
 
  $dom=new DOMDocument('1.0','gb2312');   //指定XML的格式
- $dom->load("http://hellojian.sae.sinacdn.com/data.xml");     //加载
+ $dom->load("data.xml");     //加载
  $root=$dom->getElementsByTagName("messages");   //获取根节点
  $root=$root->item(0);       
  $last_id=$root->lastChild->firstChild->nodeValue;  //获取最后一个message的第一个子节点（即id节点）的值
