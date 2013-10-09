@@ -65,7 +65,7 @@ text-align: center;">
 
 <?php
 $dom=new DOMDocument('1.0','gb2312');   
-$dom->load("data.xml");       //加载
+    $dom->load("http://hellojian.sae.sinacdn.com/data.xml");       //加载
 $root=$dom->getElementsByTagName("messages"); 
 $root=$root->item(0);      
 $message=$root->getElementsByTagName("message");   //获取所有message节点
