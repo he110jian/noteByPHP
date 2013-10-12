@@ -8,10 +8,7 @@
 <?php
 $domain =  "hellojian";
 $filename = "data.xml";
-if(fileExists($domain,$filename))
-	echo "hahaa";
-else 
-    echo "sad";
+echo $domain;
 ?>
 </body>
 </html>
