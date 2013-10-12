@@ -22,7 +22,6 @@ if(isset($_COOKIE["login"]))
 
         <div id="div1"><img src="js/public-bg9.jpg" /></div>   
         <div id="right"><div class="shortcut-bg"></div><div class="shortcut-text"><a href="http://baidu.com" target="_blank">百度一下</a></div></div>
-    <div position: fixed;>
         <div id="header-bg"></div>
         <div id="header-fading"></div> 
 <div style="top: 20px;
@@ -63,7 +62,7 @@ text-align: center;">
     				showtime()
 				</script>
 </div>
-    </div>
+
 <?php
 $dom=new DOMDocument('1.0','gb2312');   
 $dom->load("data.xml");       //加载
