@@ -9,8 +9,8 @@
 <?php
 $domain =  "hellojian";
 $filename = "data.xml";
-$flag = fileExists($domain,$filename);
-echo $flag;
+if(fileExists($domain,$filename))
+	echo "hahaa";
 ?>
 </body>
 </html>
