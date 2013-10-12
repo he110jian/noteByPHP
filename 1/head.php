@@ -9,7 +9,7 @@
 <?php
 string $domain =  "hellojian";
 string $filename = "data.xml";
-$flag = fileExists(string $domain, string $filename);
+$flag = fileExists($domain,$filename);
 echo $flag;
 ?>
 </body>
