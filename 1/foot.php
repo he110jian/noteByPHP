@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
         <div id="header-bg"></div>
         <div id="header-fading"></div> 
 <div style="top: 20px;
-position: absolute;
+position: fixed;
 height:30px;
 width: 70%;
 left:15%;
