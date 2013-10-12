@@ -11,6 +11,8 @@ $domain =  "hellojian";
 $filename = "data.xml";
 if(fileExists($domain,$filename))
 	echo "hahaa";
+else 
+    echo "sad";
 ?>
 </body>
 </html>
