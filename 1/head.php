@@ -7,8 +7,8 @@
 <body>
 <span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span>
 <?php
-string $domain =  "hellojian";
-string $filename = "data.xml";
+$domain =  "hellojian";
+$filename = "data.xml";
 $flag = fileExists($domain,$filename);
 echo $flag;
 ?>
