@@ -8,7 +8,9 @@
 <?php
 $domain =  "hellojian";
 $filename = "data.xml";
-echo $domain;
+$s = new SaeStorage();
+echo $s->read( $domain , $filename);
+echo $s->getUrl( $domain , $filename);
 ?>
 </body>
 </html>
