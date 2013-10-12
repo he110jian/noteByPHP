@@ -6,6 +6,11 @@
 </head>
 <body>
 <span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span>
-
+<?php
+$domain =  "hellojian";
+$filename = "data.xml";
+$flag = fileExists(string $domain, string $filename);
+echo $flag;
+?>
 </body>
 </html>
