@@ -65,7 +65,7 @@ text-align: center;">
 </div>
 
 <?php
-$dom=new DOMDocument('1.0','gb2312');   
+$dom=new DOMDocument('1.0','utf-8');   
 $dom->load("data.xml");       //加载
 $root=$dom->getElementsByTagName("messages"); 
 $root=$root->item(0);      
@@ -74,7 +74,7 @@ $message_count=$message->length;   //计算有多少条
 ?>
 <div style="top: 100px;
 position: absolute;width: 100%;
-left:0;">
+left:0;z-index:29; ">
     <p class="accToggler" style="background-color: rgb(194, 111, 114); "><? 
 if($message_count==0){
  echo "暂时没有留言\n";}
