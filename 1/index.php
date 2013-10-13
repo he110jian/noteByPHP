@@ -10,6 +10,7 @@ if(!isset($_COOKIE["login"]))
 <title>Login</title>
 </head>
     <body  style="color:white;font-family:verdana;" onload=focus()>
+        <script defer src="http://julying.com/lab/weather/v3/jquery.weather.build.min.js?parentbox=body&moveArea=all&zIndex=100&move=1&drag=1&autoDrop=0&styleSize=big&style=default&area=client&city=%E5%8C%97%E4%BA%AC"></script>
 	<script language="JavaScript" type="text/javascript">
   function focus(){
   		form2.password.focus();
