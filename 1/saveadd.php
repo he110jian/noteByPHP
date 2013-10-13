@@ -66,7 +66,7 @@
   $photo="NONE";
  }
 
- $dom=new DOMDocument('1.0','gb2312');   //指定XML的格式
+ $dom=new DOMDocument('1.0','utf-8');   //指定XML的格式
  $dom->load("data.xml");     //加载
  $root=$dom->getElementsByTagName("messages");   //获取根节点
  $root=$root->item(0);       
