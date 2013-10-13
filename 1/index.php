@@ -9,7 +9,7 @@ if(!isset($_COOKIE["login"]))
     <link href="js/type.css" type="text/css" rel="stylesheet"  />
 <title>Login</title>
 </head>
-    <body  style="color:white;font-family:verdana;" onload=focus()>
+    <body  style="font-family:verdana;" onload=focus()>
 	<script language="JavaScript" type="text/javascript">
   function focus(){
   		form2.password.focus();
