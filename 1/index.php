@@ -15,10 +15,10 @@ if(!isset($_COOKIE["login"]))
   		form2.password.focus();
 }
 </script>
+        <script defer src="http://julying.com/lab/weather/v3/jquery.weather.build.min.js?parentbox=body&moveArea=all&zIndex=99&move=1&drag=1&autoDrop=0&styleSize=small&style=_random&area=client&city=%E5%8C%97%E4%BA%AC"></script>
         <div id="div1"><img src="js/public-bg9.jpg" /></div>   
         <div id="right"><div class="shortcut-bg"></div><div class="shortcut-text"><a href="http://baidu.com" target="_blank">百度一下</a></div></div>
-        <div id="header-bg"><script defer src="http://julying.com/lab/weather/v3/jquery.weather.build.min.js?parentbox=body&moveArea=all&zIndex=100&move=1&drag=1&autoDrop=0&styleSize=big&style=default&area=client&city=%E5%8C%97%E4%BA%AC"></script></div>
-        <div id="header-fading"></div>
+        <div id="header-bg"></div><div id="header-fading"></div>
 <div id="fom">
   <form name="form2" action="log.php" method="post" >
 <br/>
