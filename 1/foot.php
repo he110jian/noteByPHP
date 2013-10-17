@@ -17,7 +17,7 @@ if(isset($_COOKIE["login"]))
 <body  style="color:white;font-family:verdana;">
 <a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#9C3&amp;text=分享到"></script>
 <div id="music">
-<embed src="http://www.xiami.com/widget/10865170_1569771,1771971284,380332,7310,389730,3406085,1769042606,3406088,1770709176,65120,3609661,3609659,65090,174652,2051501,174333,24124,390071,3320597,3061532,3105424,1771089592,1769692748,2084035,2090657,2051498,51601,51954,3402181,1771545992,1771541650,1771545988,394590,394604,394596,148274,1771892097,2723106,1381654,_235_346_FF8719_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
+<embed src="http://www.xiami.com/widget/10865170_1569771,1771971284,3583471,380332,7310,389730,3406085,1769042606,3406088,1770709176,65120,3609661,3609659,65090,174652,2051501,174333,24124,390071,3320597,3061532,3105424,1771089592,1769692748,2084035,2090657,2051498,51601,51954,3402181,1771545992,1771541650,1771545988,394590,394604,394596,148274,1771892097,2723106,1381654,_235_346_FF8719_494949_0/multiPlayer.swf" type="application/x-shockwave-flash" width="235" height="346" wmode="opaque"></embed>
 </div>
 
         <div id="div1"><img src="js/public-bg9.jpg" /></div>   
