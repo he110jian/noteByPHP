@@ -31,7 +31,7 @@ width: 70%;
 z-index:19; 
 left:15%;
 text-align: center;">
-    <p><span style="float:left;"><a href='#' onClick="window.open('add.php','Add','left=200,top=220,width=620,height=430,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no')">添加留言</a></span><span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span></p>
+    <p><span style="float:right;"> <a href='log.php?out=out'>LogOut</a></span></p>
     <script type="text/JavaScript">
    					 document.write("<span id='clock'></span>");
   					 var Digital,hours,minutes,seconds,timeValue,years,months,dates,day,Dday;
