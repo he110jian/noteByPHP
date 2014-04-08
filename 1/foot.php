@@ -119,7 +119,7 @@ if($message_count==0){
 
   }?>
 <p class="accToggler" style="background-color:#789262; " ><? echo $id."> &nbsp;".base64_decode($title);  
-   echo "<span style='float:right;'>".base64_decode($author)." @ [".$addtime."] "."&nbsp; <a href='del.php?id=".$id."'> [删除]</a><span>";?>
+   echo "<span style='float:right;'>".base64_decode($author)." @ [".$addtime."] "."&nbsp; <span>";?>
 </p>
     <p class="accContent" style="overflow-x: hidden; overflow-y: hidden; visibility: visible; height: 120px; opacity: 1;">
 	
