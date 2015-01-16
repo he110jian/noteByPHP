@@ -44,9 +44,9 @@ Function update(){
 			$last = $last[count($last)-1];
             if(strcmp($last,$res))
             {
-                $new = "\r\n".$res;
+                $addNew = $content."\r\n".$res;
 				$attr = array('encoding'=>'gzip');
-				$result = $st->write($domain,$filename, $new, -1, $attr, true);
+				$result = $st->write($domain,$filename, $addNew, -1, $attr, true);
             }
 			echo $st->read( $domain, $filename );
 
