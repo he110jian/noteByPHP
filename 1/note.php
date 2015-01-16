@@ -138,6 +138,7 @@ else
 					parent.removeChild(child);
 					var i = $("#count");
 					i.text(parseInt(i.text())-1);
+                    window.location.reload();
 				}
 			}
 		}
