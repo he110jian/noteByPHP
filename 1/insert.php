@@ -11,7 +11,7 @@ $title= trim($_POST["title"]);
 $fielPath="NONE";
     
     
-    $sql = "SELECT * FROM `note` where title=".$title."limit 1"; 
+    $sql = "SELECT * FROM `note` where title=`".$title."` limit 1"; 
 $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
     if(count($data))
