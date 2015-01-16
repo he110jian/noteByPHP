@@ -42,7 +42,7 @@ Function update(){
 //是否得到新的内容
 			$last = explode("\r\n",$last);
 			$last = $last[count($last)-1];
-            if(strcmp($last,$res))
+            if(!strcmp($last,$res))
                 echo "budeng";
 
 ?>
