@@ -10,6 +10,11 @@ $title= trim($_POST["title"]);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
     
+    
+    $sql = "SELECT * FROM `note` where title=".$title."limit 1"; 
+$data = $mysql->getData( $sql );
+$mysql->runSql($sql);
+    
 		$sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
 
 $mysql->runSql($sql);
