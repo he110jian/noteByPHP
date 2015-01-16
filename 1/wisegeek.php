@@ -34,12 +34,13 @@ Function update(){
 //$fp=fopen($filename,"a+")or die("Unable to open file!");
 //$fp1 = file($filename);
 //$last = $fp1[count($fp1)-1];
+			$st = new SaeStorage();
 			$res = preg_replace("/[\s]+/is"," ",$matches[0][0]);
 			$res = str_replace("</a>","</a> | <a href='medias/tips.html'>all</a>",$res);
             echo $res;
             $domain = "tips";
             $filename = "tips.html";
-            $last = read( $domain, $filename );
+            $last = $st->read( $domain, $filename );
 			echo $last;
 //$isE = strcmp($last,$res);
 
