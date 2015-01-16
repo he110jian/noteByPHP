@@ -20,7 +20,6 @@ define(ALL_PS,"binggo");   //
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Remember</title>
-	<title>Home</title>
 <link href="css/my.css" rel="stylesheet">
 <!-- 新 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -42,11 +41,8 @@ define(ALL_PS,"binggo");   //
     <div class="container"> 
 		<div class="middlediv">
 			<?php include("show.php");?>
-			<br/>
-			<?php include("footer.php");?>
 		</div>
     <!-- FOOTER -->
-	
     </div>
 	<!-- /.container -->
 	<!-- modal -->
@@ -92,30 +88,10 @@ define(ALL_PS,"binggo");   //
 	<?php
 }
 else
-{?>
-<script type="text/javascript">dotime();</script>
-<table><td height="100%" width="100%" align="center" valign="middle">
-<h1 id="t"></h1>
-</td></table>
-
-	<div id="myform" class="row" style="margin-top:60px">
-		<div class="col-md-offset-4 col-md-4">
-			<form role="form" action="" method="post">
-				<div class="form-group">
-					<input type="password" autofocus="autofocus" class="form-control" name="password" placeholder="Password">
-					<input type="hidden" name="sub" value="sub" />
-				</div>
-			</form>
-		</div>
-	</div>
-	<?php
-			$fp=file("./medias/tips.html");
-			$res = $fp[count($fp)-1];
-?>  
-	<div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><?php print_r($res); ?></span> </button><div>
-<?php
+{
+	echo '请先登录！<br>三秒后自动跳转页面......';
+	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.html\">";
 }
-	include("top.html");
 ?>
 <script language="javascript">
     function delcfm(str) {
