@@ -7,6 +7,6 @@
 </head>
     
 	<body>
-        
+        <a href="wisegeek.php">wiseGeek</a>
     </body>
 </html>
