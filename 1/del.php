@@ -9,7 +9,7 @@ $content = $_POST['content'];
 $title= trim($_POST["title"]);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
-$sql = "delete from note where LastName='".$_GET["id"]."'";
+$sql = "delete from note where time='".$_GET["id"]."'";
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
 {
