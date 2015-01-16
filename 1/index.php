@@ -19,8 +19,14 @@ if(isset($_COOKIE["login"]))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <title>Home</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/my.css" rel="stylesheet">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script>
 	function dotime(){
 	
@@ -95,7 +101,5 @@ if(isset($_COOKIE["login"]))
 			?>  
             <div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><? print_r($last); ?></span> </button></div>
     </div>
-<script src="css/jquery.min.js"></script>
-<script src="css/bootstrap.min.js"></script>
 </body>
 </html>
