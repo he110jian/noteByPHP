@@ -88,7 +88,7 @@ define(ALL_PS,"binggo");   //
 else
 {
 	echo '请先登录！<br>三秒后自动跳转页面......';
-	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.html\">";
+	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.php\">";
 }
 ?>
 <script language="javascript">
