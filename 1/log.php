@@ -11,7 +11,7 @@ define(ALL_PS,"binggo");   //
  	}
     else
     {
- 		echo "<script language=\"javascript\"> alert('wrong username or password!');location.href='index.php';</script>";
+ 		echo "<script language=\"javascript\"> alert('wrong password!');location.href='index.php';</script>";
  	}
  }
 //===========================退出登录 
