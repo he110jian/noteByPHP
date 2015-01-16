@@ -140,11 +140,6 @@ else
 		xmlhttp.open("GET","del.php?id="+str,true);
 		xmlhttp.send();
 	}
-	function fix(str)
-	{
-		$("#"+str).toggleClass( "in fixthis", 1000 );
-		$("#fix"+str).toggleClass( "text-muted", 1000 );
-	}
 	$(window).scroll(function() {
 		$("#leaveMSG").stop().animate({ top: $(window).scrollTop() }, "slow");
   });
