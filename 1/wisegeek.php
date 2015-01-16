@@ -39,7 +39,7 @@ Function update(){
             $filename = "tips.html";
             $last = $st->read( $domain, $filename );
 
-			$last = $last[count($last)-1];
+//			$last = $last[count($last)-1];
 //$isE = strcmp($last,$res);
 			echo $last;
 
