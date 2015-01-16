@@ -9,7 +9,18 @@ $content = $_POST['content'];
 $title= trim($_POST["title"]);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
-$sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
+    
+$sql = "select title from note where title = ".$title." limit 1";
+$sql = "SELECT * FROM `note` order by time asc"; 
+$data = $mysql->getData( $sql );
+if(count($data))
+{
+    $sql = "update ntoe set content=".$content.",time=NOW() where title=".$title;
+}
+    else
+    {
+		$sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
+    }
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
 {
