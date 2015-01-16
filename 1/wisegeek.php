@@ -48,6 +48,6 @@ Function update(){
 				$attr = array('encoding'=>'gzip');
 				$result = $storage->write($domain,$filename, $new, -1, $attr, true);
             }
-			echo 
+			echo $st->read( $domain, $filename );
 
 ?>
