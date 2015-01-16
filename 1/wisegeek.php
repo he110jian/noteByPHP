@@ -40,6 +40,7 @@ Function update(){
             $last = $st->read( $domain, $filename );
 
 //			$last = $last[count($last)-1];
+			$last = explode("\r\n",$last);
 //$isE = strcmp($last,$res);
 			echo $last;
 
