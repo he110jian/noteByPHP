@@ -18,6 +18,7 @@ $mysql->runSql($sql);
     {
         $sql = "UPDATE `note` set content=".$content." where title='".$title;
          echo $sql ;
+        echo"\n";
     }
     else
     {
