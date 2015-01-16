@@ -16,7 +16,7 @@ $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
     if(count($data))
     {
-        $sql = "UPDATE `note` set content=".$content."where title='".$title;
+        $sql = "UPDATE `note` set content=".$content." where title='".$title;
          echo $sql ;
     }
     else
