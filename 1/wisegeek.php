@@ -1,4 +1,6 @@
 <?php
+header("Content-type: text/html; charset=utf-8");//防止乱码
+
 Function update(){
 	$ftp_server = "223.3.85.5";
 	$ftp_user = "ftp537";
