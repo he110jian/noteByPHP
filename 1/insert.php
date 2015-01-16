@@ -15,7 +15,7 @@ $sql = "SELECT * FROM `note` order by time asc";
 $data = $mysql->getData( $sql );
 if(count($data))
 {
-    $sql = "update note set content=".$content.",time=".NOW().", where title=".$title;
+    $sql = "update note set content=".$content.",time=NOW(), where title=".$title;
 }
     else
     {
