@@ -10,12 +10,12 @@ $title= trim($_POST["title"]);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
     
-$sql = "select title from note where title = ".$title." limit 1";
+$sql = "SELECT title from note where title = ".$title." limit 1";
 $sql = "SELECT * FROM `note` order by time asc"; 
 $data = $mysql->getData( $sql );
 if(count($data))
 {
-    $sql = "update 'note' set content=".$content.",time=NOW() where title=".$title;
+    $sql = "UPDATE note set content=".$content.",time=NOW() where title=".$title;
 }
     else
     {
