@@ -1,7 +1,7 @@
 <?php
 $mysql = new SaeMysql();
 
-$sql = "SELECT * FROM `note` order by time desc"; 
+$sql = "SELECT * FROM `note` order by time asc"; 
 $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
