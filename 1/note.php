@@ -1,73 +1,181 @@
 <?php
-header("Content-type: text/html; charset=utf-8");//防止中文乱码
-$mysql = new SaeMysql();
+error_reporting(E_ALL & ~E_NOTICE);
+define(ALL_PS,"binggo");   //
+//=======================================登录
+ if($_POST[sub])
+ {
+ 	$ps=md5($_POST[password].ALL_PS)=="e18f8200bbe2fb0b0176a3b5c6228d3e";
+ 	if($ps)
+    {
+ 		setcookie("login","ok",time()+3600*2);
+		header("Location:note.php");
+ 	}
+ }
+//===========================退出登录 
+?>
+<?php if(isset($_COOKIE["login"]))
+{?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remember</title>
+	<title>Home</title>
+<link href="css/my.css" rel="stylesheet">
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
-$sql = "SELECT * FROM `note`";
-$data = $mysql->getData( $sql );
-$mysql->runSql($sql);
-if ($mysql->errno() != 0)
-{
-    die("Error:" . $mysql->errmsg());
-}
-$mysql->closeDb();
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
 
 
-$message_count=count($data);   //计算有多少条
-if($message_count==0)
-{
-	echo "<h3>暂时没有留言";
+    <div class="container"> 
+		<div class="middlediv">
+			<?php include("show.php");?>
+			<br/>
+			<?php include("footer.php");?>
+		</div>
+    <!-- FOOTER -->
+	
+    </div>
+	<!-- /.container -->
+	<!-- modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">For Remember</h4>
+      </div>
+	  <form role="form" action="insert.php" enctype="multipart/form-data" method="post">
+      <div class="modal-body">
+		<div class="form-group">
+			<label>主题</label>
+			<input id="titleE" class="form-control" name="title" placeholder="Title" required />
+		</div>
+		<div class="form-group">
+			<label>内容</label>
+			<div class="btn-group pull-right" data-toggle="buttons">
+			  <label class="btn btn-default btn-xs active">
+				<input type="radio" name="options" value="1" autocomplete="off" checked> 文本
+			  </label>
+			  <label class="btn btn-default btn-xs">
+				<input type="radio" name="options" value="2" autocomplete="off"> 代码
+			  </label>
+			</div>
+			<textarea id="contentE" class="form-control" rows="5" name="content" placeholder="Content"></textarea>
+		</div>
+		<div class="form-group">
+			<label for="file">附件</label>
+			<input id="fileE" name="upfile" type="file" />
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save Message</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+
+	<?php
 }
 else
-{
-	echo "<h3>当前共有<span id='count'>".$message_count."</span>条留言</h3>";
+{?>
+<script type="text/javascript">dotime();</script>
+<table><td height="100%" width="100%" align="center" valign="middle">
+<h1 id="t"></h1>
+</td></table>
+
+	<div id="myform" class="row" style="margin-top:60px">
+		<div class="col-md-offset-4 col-md-4">
+			<form role="form" action="" method="post">
+				<div class="form-group">
+					<input type="password" autofocus="autofocus" class="form-control" name="password" placeholder="Password">
+					<input type="hidden" name="sub" value="sub" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<?php
+			$fp=file("./medias/tips.html");
+			$res = $fp[count($fp)-1];
+?>  
+	<div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><?php print_r($res); ?></span> </button><div>
+<?php
 }
-echo '<div id="leaveMSG" style="position: absolute; top: 0px; width: 100%;" class="text-center"><a class="btn btn-success" data-toggle="modal" data-target="#myModal">Leave A Message</a></div>';
-if($message_count!=0)
-{
-	echo "<div class='panel-group' id='accordion'>";
-	for($i=$message_count-1;$i>=0;$i--)
-	{
-		$msg=$data[i];
-		$title=$msg['title'];
-        $content=$msg['content'];
-        $addtime=$msg['time'];
-        $file=$msg['filePath'];
+	include("top.html");
+?>
+<script language="javascript">
+    function delcfm(str) {
+		var f = confirm("Never Mind?");
+		if(f){
+			showChange(str);
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
-?>
-		<div class="panel panel-default" id="<?php echo $addtime;?>">
-			<div class="panel-heading">
-				<h4 class="panel-title">
-					<a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i;?>">
-					<? echo "<span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title".$i."'> ".($title); 
-					echo "</span><small class='pull-right text-muted'>".$addtime."</small>";?></a>
-				</h4>
-			</div>
-			<div id="collapse<?php echo $i;?>" class="panel-collapse collapse">
-				<div class="panel-body">
-				<p id="msg<?php echo $i;?>">
-					<?php echo ($content)."</p>";
-    /*
-					if($photo!="NONE")
-					{
-						$photo = base64_decode($photo);
-						$type = substr(strrchr($photo, '.'),1);
-						$types = array("jpg","gif","bmp","jpeg","png");
-						if(!in_array(strtolower($type),$types))
-						{
-							echo "<a href='medias/upfile/".$photo."'><span class='glyphicon glyphicon-save' id='photo".$i."'> ".$photo."</span></a>";
-						}
-						else
-						{
-							echo "<a href='medias/upfile/".$photo."' target='_blank'><img src='medias/upfile/".$photo."' class='img-responsive' alt='".$photo."'/>";
-						}
-					}*/
-					?>
-					<hr/>
-					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a href='javascript:void(0);' onclick="fix('collapse<?php echo $i;?>');"><span id="fixcollapse<?php echo $i;?>" class='glyphicon glyphicon-pushpin'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
-					</div>
-					</div>
-					</div>
-					<?php
-echo "</div>";
-}
-?>
+	function edit(id) {
+		var msg = document.getElementById("msg"+id);
+		var msg_v = msg.innerText;
+		var des = document.getElementById("contentE");
+		des.value = msg_v;
+		msg = document.getElementById("title"+id);
+		msg_v = msg.innerText;
+		des = document.getElementById("titleE");
+		des.value = msg_v;
+		$('#myModal').modal('show');
+	}
+	function showChange(str) {
+		var xmlhttp;/*
+		if (str.length==0){
+			document.getElementById("txtHint").innerHTML="";
+			return;
+		}*/
+		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}
+		else{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				if('1' == xmlhttp.responseText)
+				{
+					var parent=document.getElementById("accordion");
+					var child=document.getElementById(str);
+					parent.removeChild(child);
+					var i = $("#count");
+					i.text(parseInt(i.text())-1);
+				}
+			}
+		}
+		xmlhttp.open("GET","del.php?id="+str,true);
+		xmlhttp.send();
+	}
+	function fix(str)
+	{
+		$("#"+str).toggleClass( "in fixthis", 1000 );
+		$("#fix"+str).toggleClass( "text-muted", 1000 );
+	}
+	$(window).scroll(function() {
+		$("#leaveMSG").stop().animate({ top: $(window).scrollTop() }, "slow");
+  });
+
+</script>
+</body>
+</html>
