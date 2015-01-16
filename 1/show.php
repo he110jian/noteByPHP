@@ -31,7 +31,7 @@ if($message_count!=0)
         $content=$msg['content'];
         $addtime=$msg['time'];
         $file=$msg['filePath'];
-	}
+	
 ?>
 		<div class="panel panel-default" id="<?php echo $addtime;?>">
 			<div class="panel-heading">
@@ -66,6 +66,7 @@ if($message_count!=0)
 					</div>
 					</div>
 					</div>
+	}
 					<?php
 echo "</div>";
 }
