@@ -48,6 +48,10 @@ Function update(){
 				$attr = array('encoding'=>'gzip');
 				$result = $st->write($domain,$filename, $addNew, -1, $attr, true);
             }
+			else
+            {
+                echo "服务器还未更新，请稍后再试，每天17:00更新一条";
+            }
 			echo $st->read( $domain, $filename );
 
 ?>
