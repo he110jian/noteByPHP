@@ -83,14 +83,14 @@ if(isset($_COOKIE["login"]))
 				<div class="col-md-offset-4 col-md-4">
 					<form role="form" action="" method="post">
 						<div class="form-group">
-                            <input type="password" autofocus="autofocus" class="form-control" name="password" placeholder="Password"/>
+                            <input type="password" autofocus="autofocus" class="form-control" name="password" placeholder="Password" />
 							<input type="hidden" name="sub" value="sub" />
 						</div>
 					</form>
 				</div>
 			</div>
         	
-            <?php
+            <?
 				$st = new SaeStorage();
             	$domain = "tips";
             	$filename = "tips.html";
@@ -98,9 +98,9 @@ if(isset($_COOKIE["login"]))
 				$last = explode("\r\n",$content);
 				$last = $last[count($last)-1];
 			?>  
-			<div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><?php print_r($last); ?></span> </button><div>
+            <div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><? print_r($last); ?></span> </button></div>
             <script type="text/javascript">dotime();</script>
             <table><td height="100%" width="100%" align="center" valign="middle"><h1 id="t"></h1></td></table>
     </div>
-    </body>
-</html>
+            </body>
+        </html>
