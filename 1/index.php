@@ -95,7 +95,7 @@ if(isset($_COOKIE["login"]))
 			?>  
             <div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><? print_r($last); ?></span> </button></div>
     </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="css/jquery.min.js"></script>
+<script src="css/bootstrap.min.js"></script>
 </body>
 </html>
