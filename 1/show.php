@@ -1,5 +1,4 @@
 <?php
-header("Content-type: text/html; charset=utf-8");//防止中文乱码
 $mysql = new SaeMysql();
 
 $sql = "SELECT * FROM `note`";
