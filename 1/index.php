@@ -6,12 +6,12 @@ if($_POST[sub])
  	if($ps)
     {
  		setcookie("login","ok",time()+3600*2);
-		header("Location:wisegeek.php");
+		header("Location:note.php");
  	}
  }
 if(isset($_COOKIE["login"]))
 {
-    header("Location:wisegeek.php");
+    header("Location:note.php");
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
