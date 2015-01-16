@@ -11,5 +11,5 @@ if ($mysql->errno() != 0)
 $mysql->closeDb();
 
 
-print_r($data);
+print_r($data[[0]);
 ?>
