@@ -1,4 +1,18 @@
-
+<?
+if($_POST[sub])
+ {
+ 	$ps=md5($_POST[password].ALL_PS)=="e18f8200bbe2fb0b0176a3b5c6228d3e";
+ 	if($ps)
+    {
+ 		setcookie("login","ok",time()+3600*2);
+		header("Location:wisegeek.php");
+ 	}
+ }
+if(isset($_COOKIE["login"]))
+{
+    header("Location:wisegeek.php");
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
