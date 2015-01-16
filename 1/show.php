@@ -62,7 +62,7 @@ if($message_count!=0)
 					}*/
 					?>
 					<hr/>
-					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a href='javascript:void(0);' onclick="fix('collapse<?php echo $i;?>');"><span id="fixcollapse<?php echo $i;?>" class='glyphicon glyphicon-pushpin'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
+					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
 					</div>
 					</div>
 					</div>
