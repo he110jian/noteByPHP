@@ -145,7 +145,6 @@ else
 	}
 	function fix(str)
 	{
-        alert("sda");
 		$("#"+str).toggleClass( "in fixthis", 1000 );
 		$("#fix"+str).toggleClass( "text-muted", 1000 );
 	}
