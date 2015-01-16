@@ -4,7 +4,6 @@ if(isset($_COOKIE["login"]))
 
 $mysql = new SaeMysql();
 
-$sql = "SELECT * FROM `note` ";
     //$title=addslashes(trim($_POST["title"]));
 $content = $_POST['content'];
 $title= trim($_POST["title"]);
