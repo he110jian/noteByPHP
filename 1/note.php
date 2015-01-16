@@ -88,7 +88,7 @@ define(ALL_PS,"binggo");   //
 else
 {
 	echo 'log please!<br>back to index page in 3 seconds......';
-	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.html\">";
+	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.php\">";
 }
 ?>
 <script language="javascript">
