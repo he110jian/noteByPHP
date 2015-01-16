@@ -131,15 +131,13 @@ else
 		xmlhttp.onreadystatechange=function(){
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
-                window.location.reload();
-				if('1' == xmlhttp.responseText)
-				{
+                
 					var parent=document.getElementById("accordion");
 					var child=document.getElementById(str);
 					parent.removeChild(child);
 					var i = $("#count");
 					i.text(parseInt(i.text())-1);
-				}
+				
 			}
 		}
 		xmlhttp.open("GET","del.php?id="+str,true);
