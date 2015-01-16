@@ -37,12 +37,17 @@ Function update(){
 			$st = new SaeStorage();
             $domain = "tips";
             $filename = "tips.html";
-            $last = $st->read( $domain, $filename );
+            $content = $st->read( $domain, $filename );
 
 //是否得到新的内容
-			$last = explode("\r\n",$last);
+			$last = explode("\r\n",$content);
 			$last = $last[count($last)-1];
-            if(!strcmp($last,$res))
-                echo "budeng";
+            if(strcmp($last,$res))
+            {
+                $new = "\r\n".$res;
+				$attr = array('encoding'=>'gzip');
+				$result = $storage->write($domain,$filename, $new, -1, $attr, true);
+            }
+			echo 
 
 ?>
