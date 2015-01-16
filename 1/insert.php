@@ -16,8 +16,9 @@ $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
     if(count($data))
     {
+        echo $data[0]['title'];
+        echo $title;
         $sql = "update note set content='$content' where title='$title'"
-         echo $sql ;
     }
     else
     {
