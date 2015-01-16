@@ -39,10 +39,10 @@ Function update(){
             $filename = "tips.html";
             $last = $st->read( $domain, $filename );
 
-//			$last = $last[count($last)-1];
+//是否得到新的内容
 			$last = explode("\r\n",$last);
-//$isE = strcmp($last,$res);
-			echo $last[count($last)-1];
-
+			$last[count($last)-1];
+            if(strcmp($last,$res))
+                echo "budeng";
 
 ?>
