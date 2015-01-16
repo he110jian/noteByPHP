@@ -18,7 +18,6 @@ if ($mysql->errno() != 0)
 
 $mysql->closeDb();
 
-echo '1';
 }
 ?>
 
