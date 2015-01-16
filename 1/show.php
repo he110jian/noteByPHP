@@ -26,8 +26,7 @@ if($message_count!=0)
 	echo "<div class='panel-group' id='accordion'>";
 	for($i=$message_count-1;$i>=0;$i--)
 	{
-		$msg=$data[i];
-        print_r($msg);
+		$msg=$data[$i];
 		$title=$msg['title'];
         $content=$msg['content'];
         $addtime=$msg['time'];
