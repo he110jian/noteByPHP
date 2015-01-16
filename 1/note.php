@@ -131,6 +131,7 @@ else
 		xmlhttp.onreadystatechange=function(){
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
+                window.location.reload();
 				if('1' == xmlhttp.responseText)
 				{
 					var parent=document.getElementById("accordion");
@@ -138,7 +139,6 @@ else
 					parent.removeChild(child);
 					var i = $("#count");
 					i.text(parseInt(i.text())-1);
-                    window.location.reload();
 				}
 			}
 		}
