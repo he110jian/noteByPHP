@@ -27,6 +27,7 @@ if($message_count!=0)
 	for($i=$message_count-1;$i>=0;$i--)
 	{
 		$msg=$data[i];
+        print_r($msg);
 		$title=$msg['title'];
         $content=$msg['content'];
         $addtime=$msg['time'];
