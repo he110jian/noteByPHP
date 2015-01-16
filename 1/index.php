@@ -78,7 +78,9 @@ if(isset($_COOKIE["login"]))
 </head>
     
 	<body>
-        <div class="container" style="z-index:999"> 
+        <div class="container">
+            <script type="text/javascript">dotime();</script>
+            <table><td height="100%" width="100%" align="center" valign="middle"><h1 id="t"></h1></td></table>
         	<div id="myform" class="row" style="margin-top:60px">
 				<div class="col-md-offset-4 col-md-4">
 					<form role="form" action="" method="post">
@@ -100,8 +102,6 @@ if(isset($_COOKIE["login"]))
 				$last = str_replace("medias/tips.html","http://hellojian-tips.stor.sinaapp.com/tips.html",$last);
 			?>  
             <div class="text-center"><button class="btn btn-muted" type="button">Do you know ?<span class="badge"><? print_r($last); ?></span> </button></div>
-            <script type="text/javascript">dotime();</script>
-            <table><td height="100%" width="100%" align="center" valign="middle"><h1 id="t"></h1></td></table>
     </div>
-            </body>
-        </html>
+</body>
+</html>
