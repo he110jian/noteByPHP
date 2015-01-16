@@ -42,7 +42,7 @@ Function update(){
 //			$last = $last[count($last)-1];
 			$last = explode("\r\n",$last);
 //$isE = strcmp($last,$res);
-			echo $last;
+			echo $last[count($last)-1];
 
 
 ?>
