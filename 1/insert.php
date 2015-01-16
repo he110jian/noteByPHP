@@ -14,9 +14,14 @@ $fielPath="NONE";
     $sql = "SELECT * FROM `note` where title=".$title."limit 1"; 
 $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
-    
+    if(count($data))
+    {
+        $sql = "update note set content=".$content."where title=".$title;
+    }
+    else
+    {
 		$sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
-
+    }
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
 {
