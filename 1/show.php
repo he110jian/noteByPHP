@@ -66,8 +66,9 @@ if($message_count!=0)
 					</div>
 					</div>
 					</div>
-	}
+	
 					<?php
+    }
 echo "</div>";
 }
 ?>
