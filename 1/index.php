@@ -78,7 +78,7 @@ if(isset($_COOKIE["login"]))
 </head>
     
 	<body>
-        <div class="container"> 
+        <div class="container" style="z-index:999"> 
         	<div id="myform" class="row" style="margin-top:60px">
 				<div class="col-md-offset-4 col-md-4">
 					<form role="form" action="" method="post">
