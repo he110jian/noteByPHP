@@ -145,7 +145,5 @@ else
   });
 
 </script>
-<script src="css/jquery.min.js"></script>
-<script src="css/bootstrap.min.js"></script>
 </body>
 </html>
