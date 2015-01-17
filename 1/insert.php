@@ -5,6 +5,9 @@ if(isset($_COOKIE["login"]))
 $mysql = new SaeMysql();
 
     //$title=addslashes(trim($_POST["title"]));
+
+$content = $_POST['content'];
+$title= trim($_POST["title"]);
 if(1 == $_POST["options"])
 {
 	$title = str_replace('<',"&lt;",$title);
@@ -12,8 +15,6 @@ if(1 == $_POST["options"])
 	$content = str_replace('<',"&lt;",$content);
 	$content = str_replace('>',"&gt;",$content);
 }
-$content = $_POST['content'];
-$title= trim($_POST["title"]);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
 $sql = "SELECT * FROM `note` where title='".$title."' limit 1"; 
