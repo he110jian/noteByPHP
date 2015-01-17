@@ -15,6 +15,7 @@ if(1 == $_POST["options"])
 	$content = str_replace('<',"&lt;",$content);
 	$content = str_replace('>',"&gt;",$content);
 }
+    $content=ereg_replace("\r\n","<br>",stripslashes($content));
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
 $sql = "SELECT * FROM `note` where title='".$title."' limit 1"; 
