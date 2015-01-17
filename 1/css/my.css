@@ -223,6 +223,12 @@ overflow-y:hidden;
 height:386px;
 }
 
+@media screen and (max-width:600px) {
+  div#music{
+  	display:none;
+  }
+}
+
 #search input:focus {
 			  outline:none;
 			}
