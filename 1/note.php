@@ -99,6 +99,15 @@ else
 			return false;
 		}
 	}
+    function delVer() {
+		var f = confirm("Back Later?");
+		if(f){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 	function edit(id) {
 		var msg = document.getElementById("msg"+id);
 		var msg_v = msg.innerText;
