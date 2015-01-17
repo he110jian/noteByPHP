@@ -38,7 +38,8 @@ define(ALL_PS,"binggo");   //
 
     <div class="container"> 
 		<div class="middlediv">
-			<?php include("show.php");?>
+			<?php include("show.php");
+            		include("top.html");?>
 		</div>
     <!-- FOOTER -->
     </div>
