@@ -18,7 +18,7 @@ if($message_count==0)
 }
 else
 {
-	echo "<h3>当前共有<span id='count'>".$message_count."</span>条留言</h3>";
+    echo "<h3>当前共有<span id='count'>".$message_count."</span>条留言</h3><a href='out.php?out=out' onclick='return delVer()'><span class='pull-right glyphicon glyphicon-remove-circle'></span></a>";
 }
 echo '<div id="leaveMSG" style="position: absolute; top: 0px; width: 100%;" class="text-center"><a class="btn btn-success" data-toggle="modal" data-target="#myModal">Leave A Message</a></div>';
 if($message_count!=0)
@@ -62,7 +62,8 @@ if($message_count!=0)
 					}*/
 					?>
 					<hr/>
-					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
+					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a>
+                        <a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
 					</div>
 					</div>
 					</div>
