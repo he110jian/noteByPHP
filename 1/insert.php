@@ -39,7 +39,7 @@ if ($mysql->errno() != 0)
 
 $mysql->closeDb();
 
-    //header("Location:note.php");
+    header("Location:note.php");
 }
 else
 {
