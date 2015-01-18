@@ -18,7 +18,7 @@ if($message_count==0)
 }
 else
 {
-    echo "<h3>当前共有<span id='count'>".$message_count."</span>条留言<a href='out.php?out=out' onclick='return delVer()'><span class='pull-right glyphicon glyphicon-remove-circle'></span></a></h3>";
+    echo "<h3><span id='count'>".$message_count."</span><a href='out.php?out=out' onclick='return delVer()'><span class='pull-right glyphicon glyphicon-remove-circle'></span></a></h3>";
 }
 echo '<div id="leaveMSG" style="position: absolute; top: 0px; width: 61.8%;" class="text-right"><a class="btn btn-success" data-toggle="modal" data-target="#myModal">Leave A Message</a></div>';
 if($message_count!=0)
