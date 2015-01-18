@@ -35,7 +35,6 @@ define(ALL_PS,"binggo");   //
             $filename = "imgList.txt";
             $content = $st->read( $domain, $filename );
 
-//是否得到新的内容
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
 ?>
