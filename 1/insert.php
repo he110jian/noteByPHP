@@ -6,7 +6,7 @@ if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 $mysql = new SaeMysql();
 
     //$title=addslashes(trim($_POST["title"]));
-$_POST = $json_encode($_POST);
+$_POST = json_encode($_POST);
 $content = $_POST['content'];
 $title= trim($_POST["title"]);
 if(1 == $_POST["options"])
