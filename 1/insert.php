@@ -1,5 +1,5 @@
 <?php
-header('Content-type: text/json');
+
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
