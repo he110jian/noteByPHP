@@ -114,7 +114,7 @@ else
           $.ajax({
       type: "POST",   
       url: "insert.php",    
-      data: "title="+$("#titleE").val()+"&content="+$("#contentE").val(),  
+      data: "title="+urlencode($("#titleE").val())+"&content="+urlencode($("#contentE").val()),  
       success: function(msg){ 
         alert("数据提交成功");  
       }       
