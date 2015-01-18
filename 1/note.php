@@ -117,7 +117,7 @@ else
             dataType: "json",  
             data: params,  
       success: function(msg){ 
-        alert("数据提交成功");  
+        alert(msg.title);  
       }       
     });
     }
