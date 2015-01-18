@@ -46,7 +46,6 @@ closedir($dh);
 }
 }
 ?>
-?>
     <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo $filePath;?>');"></div>
     <div class="container"> 
 		<div class="middlediv">
