@@ -7,8 +7,8 @@ $mysql = new SaeMysql();
 
     //$title=addslashes(trim($_POST["title"]));
 $_POST = $json_encode($_POST);
-$content = urldecode($_POST['content']);
-$title= trim(urldecode($_POST["title"]));
+$content = $_POST['content'];
+$title= trim($_POST["title"]);
 if(1 == $_POST["options"])
 {
 	$title = str_replace('<',"&lt;",$title);
