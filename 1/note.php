@@ -112,7 +112,14 @@ else
         });
     function postdata(){
     	document.getElementById('remember').value = 'Uploading...';
-        
+          $.ajax({
+      type: "POST",   
+      url: "insert.php",    
+      data: "title="+$("#titleE").val()+"&content="+$("#contentE").val(),  
+      success: function(msg){ 
+        alert("数据提交成功");  
+      }       
+    });
     }
     function delcfm(str) {
 		var f = confirm("Never Mind?");
