@@ -43,9 +43,8 @@ if($message_count!=0)
 			</div>
 			<div id="collapse<?php echo $i;?>" class="panel-collapse collapse">
 				<div class="panel-body">
-                    <p>
-				<div id="msg<?php echo $i;?>">
-                    <?php echo ($content)."</div></p>";
+				<p id="msg<?php echo $i;?>">
+					<?php echo ($content)."</p>";
     /*
 					if($photo!="NONE")
 					{
