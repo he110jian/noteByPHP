@@ -110,10 +110,13 @@ else
         });
     function postdata(){
     	document.getElementById('remember').value = 'Uploading...';
+        var comment = {}; 
+    comment.title = $("#titleE").val(); 
+    comment.content = $("#contentE").val(); 
           $.ajax({
-      type: "POST",   
+      datatype: "jason",   
       url: "insert.php",    
-      data: "title="+encodeURI($("#titleE").val())+"&content="+encodeURI($("#contentE").val()),  
+      data: $.toJSON(comment),   
       success: function(msg){ 
         alert("数据提交成功");  
       }       
