@@ -118,7 +118,7 @@ else
       success: function(msg){ 
         var parent=document.getElementById("accordion");
 					var child=document.getElementById(str);
-					
+					alert("ads");
 					var i = $("#count");
 					i.text(parseInt(i.text())+1);
       }       
