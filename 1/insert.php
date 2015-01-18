@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
@@ -38,7 +39,12 @@ if ($mysql->errno() != 0)
 
 $mysql->closeDb();
 
-echo "<meta http-equiv=\"refresh\" content=\"0;url=note.php\">\n";
+$res = array (
+    "title"  => $title,
+    "content" => $content,
+    "time"   => $time
+);
+echo json_encode($res);
 }
 else
 {
