@@ -16,7 +16,7 @@ if(1 == $_POST["options"])
 	$content = str_replace('<',"&lt;",$content);
 	$content = str_replace('>',"&gt;",$content);
 }
-   $content=str_replace("\r\n","<br>",$content);
+    $content=str_replace("\r\n","<br>",$content);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
 $sql = "SELECT * FROM `note` where title='".$title."' limit 1"; 
@@ -39,12 +39,7 @@ if ($mysql->errno() != 0)
 
 $mysql->closeDb();
 
-$res = array (
-    "title"  => $title,
-    "content" => $content,
-    "time"   => $time
-);
-echo json_encode($res);
+header("Location:note.php");
 }
 else
 {
