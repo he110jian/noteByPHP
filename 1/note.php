@@ -141,7 +141,7 @@ else
 	}
 	function edit(id) {
 		var msg = document.getElementById("msg"+id);
-		var msg_v = msg.innerHtml;
+		var msg_v = msg.innerText;
 		var des = document.getElementById("contentE");
 		des.value = msg_v;
 		msg = document.getElementById("title"+id);
