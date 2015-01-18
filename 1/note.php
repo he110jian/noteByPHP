@@ -110,16 +110,31 @@ else
             //postdata();  
         });
     function postdata(){
-    	document.getElementById('remember').value = 'Uploading...';
-          $.ajax({
-              type: "post",  
-              url: "insert.php",
-            dataType: "json",  
-            data: {"title":$("#titleE").val(),"content":$("#titleE").val()},  
-      success: function(msg){ 
-        alert(msg.title);  
-      }       
-    });
+    			var xmlhttp;/*
+		if (str.length==0){
+			document.getElementById("txtHint").innerHTML="";
+			return;
+		}*/
+		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}
+		else{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function(){
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+                
+					var parent=document.getElementById("accordion");
+					var child=document.getElementById(str);
+					parent.removeChild(child);
+					var i = $("#count");
+					i.text(parseInt(i.text())-1);
+				
+			}
+		}
+		xmlhttp.open("POST","insert.php?title="+$("#titleE").val()+"&content="+$("#contentE").val(),true);
+		xmlhttp.send();
     }
     function delcfm(str) {
 		var f = confirm("Never Mind?");
