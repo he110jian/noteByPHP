@@ -1,7 +1,7 @@
 <?php
 
 header("Content-type: text/html; charset=utf-8");//防止中文乱码
-/*
+
 // 爬wisegeek内容
 			$contents = file_get_contents("http://www.wisegeek.com/");
 			$reg='/<div class="WidgetText">([\s\S]*?)<\/div>/i';
@@ -28,7 +28,7 @@ header("Content-type: text/html; charset=utf-8");//防止中文乱码
             {
                 echo "服务器还未更新，请稍后再试，每天17:00更新一条";
             }
-echo $st->read( $domain, $filename );*/
+echo $st->read( $domain, $filename );/*
 			$id = rand(0,46);
 			$contents = file_get_contents("http://images.wisegeek.com/images/dyk/");
 			$reg='/\.jpg">([\s\S]*?)\.jpg</i';
@@ -39,5 +39,5 @@ echo $st->read( $domain, $filename );*/
             $domain = "tips";
             $filename = "imgList.txt";
 			$attr = array('encoding'=>'gzip');
-			$result = $st->write($domain,$filename, $addNew, -1, $attr, true);
+			$result = $st->write($domain,$filename, $addNew, -1, $attr, true);*/
 ?>
