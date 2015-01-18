@@ -109,6 +109,7 @@ else
             postdata();  
         });
     function postdata(){
+        alert($("#titleE").val());
     			var xmlhttp;/*
 		if (str.length==0){
 			document.getElementById("txtHint").innerHTML="";
@@ -128,7 +129,6 @@ else
 				
 			}
 		}
-        alert($("#titleE").val());
 		xmlhttp.open("POST","insert.php?title="+$("#titleE").val()+"&content="+$("#contentE").val(),true);
 		xmlhttp.send();
     }
