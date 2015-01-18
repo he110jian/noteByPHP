@@ -113,7 +113,7 @@ else
         var params = $("input").serialize();
           $.ajax({
               type: "post",  
-              url: url,
+              url: "insert.php",
             dataType: "json",  
             data: params,  
       success: function(msg){ 
