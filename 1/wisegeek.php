@@ -33,6 +33,6 @@ $id = rand(0,46);
 $contents = file_get_contents("http://images.wisegeek.com/images/dyk/");
 			$reg='/\.jpg"([\s\S]*?)\.jpg</i';
 			preg_match_all($reg, $contents,$matches);
-			print_r($matches[0][0]);
+			print_r($matches[1][0]);
 
 ?>
