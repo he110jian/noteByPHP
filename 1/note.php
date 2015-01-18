@@ -105,14 +105,15 @@ else
 }
 ?>
 <script language="javascript">
-    function sub(){
-    document.getElementById('remember').value = 'Uploading...';
+    
+     $(document).ready(function(){
+        $("#remember").click(function(){    
+          postdata();  
+        });
+    function postdata(){
+    	document.getElementById('remember').value = 'Uploading...';
         
     }
-     $(document).ready(function(){         //DOM的onload事件处理函数       
-        $("#button").click(function(){           //当按钮button被点击时的处理函数       
-          postdata();                                       //button被点击时执行postdata函数       
-        });       
     function delcfm(str) {
 		var f = confirm("Never Mind?");
 		if(f){
