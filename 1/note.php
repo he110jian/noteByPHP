@@ -107,7 +107,7 @@ else
 <script language="javascript">
     
         $("#remember").click(function(){    
-            //postdata();  
+            postdata();  
         });
     function postdata(){
     			var xmlhttp;/*
