@@ -61,7 +61,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  
+	  <form role="form" action="insert.php" enctype="multipart/form-data" method="post" onsubmit="document.getElementById('remember').value = 'Uploading...'">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -79,6 +79,7 @@ define(ALL_PS,"binggo");   //
 			</div>
 			<textarea id="contentE" class="form-control" rows="5" name="content" placeholder="Content"></textarea>
 		</div>
+          
           <!--
 		<div class="form-group">
 			<label for="file">附件</label>
@@ -90,7 +91,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <input type="submit" class="btn btn-primary" id="remember" value="Save Message"/>
       </div>
-
+        </form>
     </div>
   </div>
 </div>
@@ -106,7 +107,7 @@ else
 <script language="javascript">
     
         $("#remember").click(function(){    
-          postdata();  
+            //postdata();  
         });
     function postdata(){
     	document.getElementById('remember').value = 'Uploading...';
