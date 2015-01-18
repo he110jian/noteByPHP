@@ -29,24 +29,18 @@ define(ALL_PS,"binggo");   //
 ================================================== -->
 <body>
 <?php 
-$dir = "http://images.wisegeek.com/images/dyk/";  //要获取的目录
-echo "********** 获取目录下所有文件和文件夹 ***********<hr/>";
-//先判断指定的路径是不是一个文件夹
-if (is_dir($dir)){
-if ($dh = opendir($dir)){
-$id = rand(1,47);
-$i = 1;
-while (($file = readdir($dh))!= false){
-//文件名的全路径 包含文件名
-$filePath = $dir.$file;
-if(($id++) == $id)
-    break;
-}
-closedir($dh);
-}
-}
+$id = rand(0,46);
+// 读取Storage
+			$st = new SaeStorage();
+            $domain = "tips";
+            $filename = "imglist.txt";
+            $content = $st->read( $domain, $filename );
+
+//是否得到新的内容
+			$last = explode("\r\n",$content);
+			$last = $last[$id];
 ?>
-    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo $filePath;?>');"></div>
+    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo $last;?>');"></div>
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
