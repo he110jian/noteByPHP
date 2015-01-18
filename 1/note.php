@@ -29,13 +29,17 @@ define(ALL_PS,"binggo");   //
 ================================================== -->
 <body>
 <?php 
-$id = rand(0,46);
-$contents = file_get_contents("http://images.wisegeek.com/images/dyk/");
-			$reg='/\.jpg"([\s\S]*)\.jpg</i';
-			preg_match_all($reg, $contents,$matches);
-			print_r($matches);
+			$id = rand(0,46);
+			$st = new SaeStorage();
+            $domain = "tips";
+            $filename = "imgList.txt";
+            $content = $st->read( $domain, $filename );
+
+//是否得到新的内容
+			$last = explode("\r\n",$content);
+			$last = $last[$id];
 ?>
-    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo $last;?>');"></div>
+    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo "http://images.wisegeek.com/images/dyk/".$last."jpg";?>');"></div>
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
