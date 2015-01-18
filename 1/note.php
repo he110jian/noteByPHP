@@ -61,7 +61,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  
+	  <form role="form" action="insert.php" enctype="multipart/form-data" method="post" onsubmit="document.getElementById('remember').value = 'Uploading...'">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -91,6 +91,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <input type="submit" class="btn btn-primary" id="remember" value="Save Message"/>
       </div>
+        </form>
     </div>
   </div>
 </div>
@@ -105,32 +106,6 @@ else
 ?>
 <script language="javascript">
     
-        $("#remember").click(function(){    
-            postdata();  
-        });
-    function postdata(){
-    			var xmlhttp;/*
-		if (str.length==0){
-			document.getElementById("txtHint").innerHTML="";
-			return;
-		}*/
-		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
-			xmlhttp=new XMLHttpRequest();
-		}
-		else{// code for IE6, IE5
-			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-		}
-		xmlhttp.onreadystatechange=function(){
-			if (xmlhttp.readyState==4 && xmlhttp.status==200)
-			{
-                
-				alert("ads");
-				
-			}
-		}
-		xmlhttp.open("POST","insert.php?title="+$("#titleE").val()+"&content="+$("#contentE").val(),true);
-		xmlhttp.send();
-    }
     function delcfm(str) {
 		var f = confirm("Never Mind?");
 		if(f){
