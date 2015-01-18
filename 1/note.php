@@ -39,7 +39,7 @@ define(ALL_PS,"binggo");   //
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
 ?>
-    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo "http://images.wisegeek.com/images/dyk/".$last."jpg";?>');"></div>
+    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('<?php echo "http://images.wisegeek.com/images/dyk/".$last.".jpg";?>');"></div>
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
