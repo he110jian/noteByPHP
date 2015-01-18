@@ -106,7 +106,6 @@ else
 ?>
 <script language="javascript">
     
-     $(document).ready(function(){
         $("#remember").click(function(){    
           postdata();  
         });
@@ -142,7 +141,7 @@ else
 	}
 	function edit(id) {
 		var msg = document.getElementById("msg"+id);
-		var msg_v = msg.innerText;
+		var msg_v = msg.innerHtml;
 		var des = document.getElementById("contentE");
 		des.value = msg_v;
 		msg = document.getElementById("title"+id);
@@ -181,7 +180,6 @@ else
 	$(window).scroll(function() {
 		$("#leaveMSG").stop().animate({ top: $(window).scrollTop() }, "slow");
   });
-});
 
 </script>
 </body>
