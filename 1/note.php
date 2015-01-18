@@ -109,7 +109,6 @@ else
             postdata();  
         });
     function postdata(){
-        alert($("#contentE").val());
     			var xmlhttp;/*
 		if (str.length==0){
 			document.getElementById("txtHint").innerHTML="";
