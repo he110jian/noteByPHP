@@ -29,7 +29,7 @@ define(ALL_PS,"binggo");   //
 ================================================== -->
 <body>
 
-
+    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://223.3.85.5/2014/img/bg8 (<?php echo rand(1,47);?>).jpg');"></div>
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
