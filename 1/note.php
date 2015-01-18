@@ -116,10 +116,7 @@ else
       url: "insert.php",    
       data: "title="+$("#titleE").val()+"&content="+$("#contentE").val(),  
       success: function(msg){ 
-        var parent=document.getElementById("accordion");
-					var child=document.getElementById(str);
-					var i = $("#count");
-					i.text(parseInt(i.text())+1);
+        alert("数据提交成功");  
       }       
     });
     }
