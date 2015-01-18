@@ -125,11 +125,7 @@ else
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
                 
-					var parent=document.getElementById("accordion");
-					var child=document.getElementById(str);
-					parent.removeChild(child);
-					var i = $("#count");
-					i.text(parseInt(i.text())-1);
+				alert("ads");
 				
 			}
 		}
