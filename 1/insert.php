@@ -1,5 +1,5 @@
 <?php
-if(isset($_COOKIE["login"]))
+if(isset($_COOKIE["login"])&&$_POST['title'])
 {
 
 $mysql = new SaeMysql();
