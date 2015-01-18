@@ -110,12 +110,11 @@ else
         });
     function postdata(){
     	document.getElementById('remember').value = 'Uploading...';
-        var params = $("input").serialize();
           $.ajax({
               type: "post",  
               url: "insert.php",
             dataType: "json",  
-            data: params,  
+            data: {"title":$("#titleE").val(),"content":$("#titleE").val()},  
       success: function(msg){ 
         alert(msg.title);  
       }       
