@@ -34,10 +34,10 @@ echo $st->read( $domain, $filename );*/
 			$reg='/\.jpg">([\s\S]*?)\.jpg</i';
 			preg_match_all($reg, $contents,$matches);
 			print_r($matches[1]);
-
+			$addNew = implode("\r\n", $matches[1]);
 			$st = new SaeStorage();
             $domain = "tips";
             $filename = "imgList.txt";
 			$attr = array('encoding'=>'gzip');
-			$result = $st->write($domain,$filename, $matches[1], -1, $attr, true);
+			$result = $st->write($domain,$filename, $addNew, -1, $attr, true);
 ?>
