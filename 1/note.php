@@ -62,7 +62,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  <form role="form" enctype="multipart/form-data" method="post" onsubmit="document.getElementById('remember').value = 'Uploading...'">
+	  <form role="form" enctype="multipart/form-data" id="megform" onsubmit="document.getElementById('remember').value = 'Uploading...'">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -103,7 +103,7 @@ else
 }
 ?>
 <script language="javascript">
-    $('form').bind('submit', function(){
+    $('#megform').bind('submit', function(){
 		alert("asd");
         });
         return false;
