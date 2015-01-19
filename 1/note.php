@@ -108,7 +108,6 @@ else
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
-            alert(params);
             var url = "insert.php";
             $.ajax({
                 type: "post",
@@ -116,8 +115,10 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    alert(msg.content);
                     
+                var new = "<div class='panel panel-default' id='"+msg.time+"'>"
+                    
+        			$("#accordion").prepend(new);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     var i = $("#count");
