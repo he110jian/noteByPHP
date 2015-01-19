@@ -36,14 +36,14 @@ if($message_count!=0)
 		<div class="panel panel-default" id="<?php echo $addtime;?>">
 			<div class="panel-heading">
 				<h4 class="panel-title">
-					<a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i;?>">
-					<? echo "<span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title".$i."'> ".($title); 
+					<a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $addtime;?>">
+					<? echo "<span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title".$addtime."'> ".($title); 
 					echo "</span><small class='pull-right text-muted'>".$addtime."</small>";?></a>
 				</h4>
 			</div>
-			<div id="collapse<?php echo $i;?>" class="panel-collapse collapse">
+			<div id="collapse<?php echo $addtime;?>" class="panel-collapse collapse">
 				<div class="panel-body">
-				<p id="msg<?php echo $i;?>">
+				<p id="msg<?php echo $addtime;?>">
 					<?php echo ($content)."</p>";
     /*
 					if($photo!="NONE")
@@ -62,7 +62,7 @@ if($message_count!=0)
 					}*/
 					?>
 					<hr/>
-					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a>
+					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $addtime;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a>
                         <a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
 					</div>
 					</div>
