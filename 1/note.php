@@ -80,11 +80,11 @@ define(ALL_PS,"binggo");   //
 			<textarea id="contentE" class="form-control" rows="5" name="content" placeholder="Content"></textarea>
 		</div>
           
-         <!--
+
 		<div class="form-group">
 			<label for="file">附件</label>
 			<input id="fileE" name="upfile" type="file" />
-		</div>-->
+		</div>
 
       </div>
       <div class="modal-footer">
