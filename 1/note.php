@@ -61,7 +61,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  <form role="form" onsubmit="sub()">
+	  <form>
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -105,7 +105,8 @@ else
 }
 ?>
 <script language="javascript">
-        function sub() {
+    $(function() {
+        $("#remember").click(function() {
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
             alert(params);
@@ -122,9 +123,10 @@ else
 					i.text(parseInt(i.text())+1);
                 }
             });
-            return false;
         });
-        
+        return false;
+  
+});
     function delcfm(str) {
 		var f = confirm("Never Mind?");
 		if(f){
