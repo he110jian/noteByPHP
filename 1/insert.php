@@ -39,7 +39,7 @@ header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
-    $url = do_upload($_FILES["upfile"]["name"]);
+    //   $url = do_upload($_FILES["upfile"]["name"]);
 $mysql = new SaeMysql();
 
     //$title=addslashes(trim($_POST["title"]));
