@@ -39,7 +39,10 @@ if ($mysql->errno() != 0)
 
 $mysql->closeDb();
 
-    header("Location:note.php");
+    //header("Location:note.php");
+    $_POST["title"] = $title;
+	$_POST["content"] = $content;
+    echo json_encode($_POST);
 }
 else
 {
