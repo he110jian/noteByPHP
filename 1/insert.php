@@ -19,19 +19,28 @@ if(1 == $_POST["options"])
     $content=str_replace("\r\n","<br>",$content);
     //$time = date("Y-m-d H:i:s");
 $fielPath="NONE";
-$sql = "SELECT * FROM `note` where title='".$title."' limit 1"; 
+$sql = "SELECT * FROM `note` order by time asc"; 
 $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
-    
-    if(count($data))
+$inse = true;
+$update = -1;
+for($i=0;$i<count($data);$i--)
+{
+	$msg=$data[$i];
+	if($title==$msg['title'])
     {
-        $sql = "update note set content='$content' where title='$title'";
-        $update = $time;
+        $update = $i;
+        $inse = false;
+        break;
+    }
+}
+    if($inse)
+    {
+        $sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
     }
     else
     {
-		$sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
-        $update = 0;
+		$sql = "update note set content='$content' where title='$title'";
     }
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
