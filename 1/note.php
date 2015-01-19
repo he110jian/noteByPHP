@@ -61,7 +61,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  <form role="form" action="insert.php" method="post">
+	  <form role="form">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -105,7 +105,34 @@ else
 }
 ?>
 <script language="javascript">
-        
+        $('form').bind('submit', function(){
+            document.getElementById('remember').value = 'Uploading...';
+            var params = $("form").serialize();
+            var url = "insert.php";
+            $.ajax({
+                type: "post",
+                url: url,
+                dataType: "json",
+                data: params,
+                success: function(msg){
+                    
+                
+                    document.getElementById('remember').value = 'Save Message';
+                    $('#myModal').modal('hide');
+                    if(msg.update===-1)
+                    {
+                    	var i = $("#count");
+						i.text(parseInt(i.text())+1);
+                        //append
+                    }
+                    else
+                    {
+                        $('#msg'+msg.update).val(msg.content);
+                    }
+                }
+            });
+            return false;
+        });
 
     function delcfm(str) {
 		var f = confirm("Never Mind?");
