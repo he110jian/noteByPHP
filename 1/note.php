@@ -105,7 +105,23 @@ else
 }
 ?>
 <script language="javascript">
-    
+    $(function() {
+        $("#remember").click(function() {
+            document.getElementById('remember').value = 'Uploading...';
+            var params = $("form").serialize();
+            var url = "insert.php";
+            $.ajax({
+                type: "post",
+                url: url,
+                dataType: "json",
+                data: params,
+                success: function(msg){
+                    
+                }
+            });
+        });
+  
+});
     function delcfm(str) {
 		var f = confirm("Never Mind?");
 		if(f){
