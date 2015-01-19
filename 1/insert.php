@@ -24,7 +24,7 @@ $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
 $inse = true;
 $update = -1;
-for($i=$message_count-1;$i>=0;$i--)
+for($i=count($data)-1;$i>=0;$i--)
 {
 	$msg=$data[$i];
 	if(!strcmp($title,$msg['title']))
