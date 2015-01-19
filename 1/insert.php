@@ -31,7 +31,7 @@ return '.'.end($x);
   }
 
 
-do_upload($_POST['file']);
+do_upload($_FILES["upfile"]["name"]);
 
 
 
