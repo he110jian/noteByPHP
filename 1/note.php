@@ -122,6 +122,7 @@ else
 					i.text(parseInt(i.text())+1);
                 }
             });
+            return false;
         });
         
     function delcfm(str) {
