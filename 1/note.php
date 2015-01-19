@@ -116,9 +116,7 @@ else
                 data: params,
                 success: function(msg){
                     
-                var new = "<div class='panel panel-default' id='"+msg.time+"'>"
-                    
-        			$("#accordion").prepend(new);
+                
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     var i = $("#count");
