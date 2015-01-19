@@ -54,7 +54,7 @@ $mysql->closeDb();
     $retu["title"] = $title;
 	$retu["content"] = $content;
     $retu["update"] = $update;
-    $retu["time"] = $time;
+    $retu["time"] = date("Y-m-d H:i:s");
     echo json_encode($retu);
 }
 else
