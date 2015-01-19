@@ -116,7 +116,6 @@ else
                 data: params,
                 success: function(msg){
                     
-                	alert(msg.url);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     if(msg.update===-1)
@@ -129,7 +128,6 @@ else
                     }
                     else
                     {
-                        alert('#msg'+msg.update);
                         $('#msg'+msg.update).html(msg.content);
                     }
                 }
