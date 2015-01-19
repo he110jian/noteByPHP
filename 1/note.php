@@ -109,6 +109,7 @@ else
         $("#remember").click(function() {
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
+            alert(params);
             var url = "insert.php";
             $.ajax({
                 type: "post",
