@@ -26,7 +26,7 @@ $mysql->runSql($sql);
     if(count($data))
     {
         $sql = "update note set content='$content' where title='$title'";
-        $update = 1;
+        $update = $time;
     }
     else
     {
