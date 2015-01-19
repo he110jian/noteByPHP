@@ -31,6 +31,7 @@ $mysql->runSql($sql);
     else
     {
 		$sql = "INSERT  INTO `note` ( `title`, `content`, `time`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW() ) ";
+        $update = 0;
     }
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
