@@ -1,4 +1,40 @@
 <?php
+
+
+
+
+
+
+function do_upload($file_name){
+
+if($file_name=='')return false;
+
+$s = new SaeStorage();
+
+$exten = $this->get_extension($_FILES[$file_name]['name']);
+
+$remote_file = time().rand(100,999).$exten;
+
+$s->write( 'tips' , $remote_file , file_get_contents($_FILES[$file_name]['tmp_name']) );
+
+$url=$s->getUrl('tips', $remote_file );
+
+return $url;
+}
+
+function get_extension($filename)
+{
+
+$x = explode('.', $filename);
+
+return '.'.end($x);
+  }
+
+
+do_upload($_POST['file']);
+
+
+
 header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
