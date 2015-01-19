@@ -126,7 +126,6 @@ else
                     }
                     else
                     {
-                        alert('#msg'+msg.update);
                         $('#msg'+msg.update).html(msg.content);
                     }
                 }
