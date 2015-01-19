@@ -116,7 +116,7 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    
+                    alert(msg.content);
                 }
             });
         });
