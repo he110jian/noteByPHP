@@ -119,7 +119,7 @@ else
                     alert(msg.content);
                     
                     document.getElementById('remember').value = 'Save Message';
-                    $('#myModal').modal('hide');
+                    $('#myModal').modal('fade');
                     var i = $("#count");
 					i.text(parseInt(i.text())+1);
                 }
