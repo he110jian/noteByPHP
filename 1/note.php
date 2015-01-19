@@ -124,7 +124,7 @@ else
                     	var i = $("#count");
 						i.text(parseInt(i.text())+1);
                         i = i.text();
-                        var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading'><h4 class='panel-title'><a data-toggle='collapse' data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'>"+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"> class='panel-collapse collapse'><div class='panel-body'><p id='msg"+i+">"+msg.content+"</p><hr/></div></div></div>";
+                        var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading'><h4 class='panel-title'><a data-toggle='collapse' data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'>"+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"> class='panel-collapse collapse'><div class='panel-body'><p id='msg"+i+">"+msg.content+"</p><hr/></div></div>";
                         $("#accordion").prepend(add);
                     }
                     else
