@@ -105,7 +105,7 @@ else
 }
 ?>
 <script language="javascript">
-
+$(document).ready(function(){
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
@@ -186,6 +186,7 @@ else
 	$(window).scroll(function() {
 		$("#leaveMSG").stop().animate({ top: $(window).scrollTop() }, "slow");
   });
+});
 
 </script>
 </body>
