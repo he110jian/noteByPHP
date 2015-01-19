@@ -127,6 +127,7 @@ else
                     }
                     else
                     {
+                        alsert('#msg'+msg.update);
                         $('#msg'+msg.update).html(msg.content);
                     }
                 }
