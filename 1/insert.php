@@ -31,7 +31,7 @@ return '.'.end($x);
   }
 
 
-do_upload($_FILES["upfile"]["name"]);
+$url = do_upload($_FILES["upfile"]["name"]);
 
 
 
@@ -91,6 +91,7 @@ $mysql->closeDb();
 	$retu["content"] = $content;
     $retu["update"] = $update;
     $retu["time"] = date("Y-m-d H:i:s");
+    $retu["url"] = $url;
     echo json_encode($retu);
 }
 else
