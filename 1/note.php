@@ -123,8 +123,7 @@ else
                     {
                     	var i = $("#count");
 						i.text(parseInt(i.text())+1);
-                        var parent=document.getElementById("accordion");
-                        parent.append("<div>dsadasda</div>");
+                        $("#accordion").append("<div>dsadasda</div>");
                     }
                     else
                     {
