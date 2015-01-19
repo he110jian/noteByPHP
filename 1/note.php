@@ -105,7 +105,7 @@ else
 }
 ?>
 <script language="javascript">
-    $(function() {
+
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
@@ -123,10 +123,9 @@ else
 					i.text(parseInt(i.text())+1);
                 }
             });
+            return false;
         });
-        return false;
-  
-});
+
     function delcfm(str) {
 		var f = confirm("Never Mind?");
 		if(f){
