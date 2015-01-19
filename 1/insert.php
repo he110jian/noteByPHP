@@ -26,6 +26,7 @@ $mysql->runSql($sql);
     if(count($data))
     {
         $sql = "update note set content='$content' where title='$title'";
+        $update = 1;
     }
     else
     {
@@ -40,9 +41,11 @@ if ($mysql->errno() != 0)
 $mysql->closeDb();
 
     //header("Location:note.php");
-    $_POST["title"] = $title;
-	$_POST["content"] = $content;
-    echo json_encode($_POST);
+    $retu["title"] = $title;
+	$retu["content"] = $content;
+    $retu["update"] = $update;
+    $retu["time"] = $time;
+    echo json_encode($retu);
 }
 else
 {
