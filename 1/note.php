@@ -123,7 +123,7 @@ else
                     {
                     	var i = $("#count");
 						i.text(parseInt(i.text())+1);
-                        var add = "<div class='panel panel-default' id='"+msg.time+"'></div>";
+                        var add = "<div class='panel panel-default' id='"+msg.time+"'><h4 class='panel-title'></h4></div>";
                         $("#accordion").prepend(add);
                     }
                     else
