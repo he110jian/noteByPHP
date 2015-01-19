@@ -61,7 +61,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  <form onsubmit="return false">
+	  <form role="form" onsubmit="return false">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
