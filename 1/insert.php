@@ -27,7 +27,7 @@ $update = -1;
 for($i=0;$i<count($data);$i--)
 {
 	$msg=$data[$i];
-	if($title==$msg['title'])
+	if(!strcmp($title,$msg['title']))
     {
         $update = $i;
         $inse = false;
