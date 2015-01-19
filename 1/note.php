@@ -127,7 +127,7 @@ else
                     }
                     else
                     {
-                        $('#msg'+msg.update).val(msg.content);
+                        $('#msg'+msg.update).html(msg.content);
                     }
                 }
             });
