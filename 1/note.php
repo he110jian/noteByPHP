@@ -89,7 +89,7 @@ define(ALL_PS,"binggo");   //
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <input type="botton" class="btn btn-primary" id="remember" value="Save Message"/>
+          <input type="submit" class="btn btn-primary" id="remember" value="Save Message"/>
       </div>
         </form>
     </div>
