@@ -106,7 +106,6 @@ else
 ?>
 <script language="javascript">
         $('form').bind('submit', function(){
-            alert($("#fileE").val());
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
             var url = "insert.php";
@@ -117,7 +116,6 @@ else
                 data: params,
                 success: function(msg){
                     
-                	alert(msg.url);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     if(msg.update===-1)
