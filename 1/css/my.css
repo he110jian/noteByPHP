@@ -34,7 +34,8 @@ text-decoration : none
 }
 img {
     background:url('../upfile/loading.gif') no-repeat center;
-
+	min-width:50px;
+	min-height:50px;
 }
 .returnTop .s {
     position: absolute;
