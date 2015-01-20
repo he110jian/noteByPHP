@@ -92,7 +92,7 @@ $mysql->closeDb();
 	$retu["content"] = $content;
     $retu["update"] = $update;
     $retu["time"] = date("Y-m-d H:i:s");
-    //    $retu["url"] = $_FILES["upfile"]["name"];
+        $retu["url"] = $_FILES["upfile"]["name"];
     echo json_encode($retu);
 }
 else
