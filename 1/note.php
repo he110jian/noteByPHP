@@ -156,9 +156,6 @@ else
                         $('#msg'+msg.update).after(pic);
                     }
                 }
-                error: function () {
-                	alert("Try later");
-        }
             });
             return false;
         });
