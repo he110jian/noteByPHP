@@ -117,6 +117,8 @@ else
                 success: function(msg){
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
+                    $("input").val(''); 
+					$("textarea").val(''); 
                     if(msg.update===-1)
                     {
                     	var i = $("#count");
