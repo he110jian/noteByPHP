@@ -23,6 +23,7 @@ define(ALL_PS,"binggo");   //
     <title>Remember</title>
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link href="css/my.css" rel="stylesheet">
+<script src="css/upload.js"></script>
 
 </head>
 <!-- NAVBAR
@@ -37,8 +38,8 @@ define(ALL_PS,"binggo");   //
 
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
-?>
- <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>
+?><!--
+ <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>-->
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
@@ -61,7 +62,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  <form role="form">
+	  <form role="form" enctype="multipart/form-data">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -80,12 +81,12 @@ define(ALL_PS,"binggo");   //
 			<textarea id="contentE" class="form-control" rows="5" name="content" placeholder="Content"></textarea>
 		</div>
           
-          <!--
+          
 		<div class="form-group">
 			<label for="file">附件</label>
 			<input id="fileE" name="upfile" type="file" />
 		</div>
--->
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -107,7 +108,8 @@ else
 <script language="javascript">
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
-            var params = $("form").serialize();
+            var params = $("form").serialize()+"&upfile="+encodeURI($("input[name='upfile']").val());
+            alert(params);
             var url = "insert.php";
             $.ajax({
                 type: "post",
@@ -115,7 +117,7 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    
+                    alert(msg.url);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     if(msg.update===-1)
