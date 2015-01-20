@@ -33,7 +33,7 @@ else
 $fielPath = NULL;
 $pic=true;
 $filename = NULL;
-    if($_POST['filePath']&&check_url($_POST['filePath']))
+    if($_POST['filePath'])
     {
         $fielPath = ($_POST['filePath']);
         $filename=basename($fielPath);
