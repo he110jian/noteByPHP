@@ -156,6 +156,10 @@ else
                         $('#msg'+msg.update).after(pic);
                     }
                 }
+                error: function(msg)
+                {
+                alert(msg.error);
+            }
             });
             return false;
         });
