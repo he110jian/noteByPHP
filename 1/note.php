@@ -179,7 +179,7 @@ else
 		msg_v = msg.innerText;
 		des = document.getElementById("titleE");
 		des.value = msg_v;
-        $("#fileE").val(document.getElementById("file"+id).href;
+        $("#fileE").val(document.getElementById("#file"+id).attr("href");
 		$('#myModal').modal('show');
 	}
 	function showChange(str) {
