@@ -53,7 +53,7 @@ if($message_count!=0)
 						$types = array("jpg","gif","bmp","jpeg","png");
 						if(!in_array(strtolower($type),$types))
 						{
-							echo "<a href='".$file."'><span class='glyphicon glyphicon-save' id='file".$i."'> ".$filename."</span></a>";
+							echo "<a href='".$file."'><span class='glyphicon glyphicon-save'> ".$filename."</span></a>";
 						}
 						else
 						{
