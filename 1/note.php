@@ -105,7 +105,19 @@ else
 }
 ?>
 <script language="javascript">
+    function getURL(url) {
+        var xmlhttp = new ActiveXObject( "Microsoft.XMLHTTP");
+        xmlhttp.open("GET", url, false);
+        xmlhttp.send();
+        if(xmlhttp.readyState==4) {
+            if(xmlhttp.Status != 200) alert("不存在");
+            return xmlhttp.Status==200;
+        }
+        return false;
+}
         $('form').bind('submit', function(){
+            if (!$("#fileE").val || !getURL($("#fileE").val))
+                return false;
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
             var url = "insert.php";
