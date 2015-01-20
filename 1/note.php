@@ -115,7 +115,7 @@ else
                 secureuri:false,
                 fileElementId:'upfile',
                 dataType: 'json',
-                success: function (data) {
+                success: function (msg) {
                     alert(msg.url);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
