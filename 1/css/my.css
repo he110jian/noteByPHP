@@ -32,6 +32,7 @@ text-decoration : none
     cursor: pointer;
 	z-index:1000;
 }
+img { background: url(/upfile/loading.gif) left top no-repeat; visibility: hidden; }
 .returnTop .s {
     position: absolute;
     top: -2px;
