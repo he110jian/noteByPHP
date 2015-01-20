@@ -140,7 +140,7 @@ else
                             }
                         }
                         add = add + pic + tail;
-					}?>
+					}
                         $("#accordion").prepend(add);
                     }
                     else
