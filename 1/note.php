@@ -37,8 +37,8 @@ define(ALL_PS,"binggo");   //
 
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
-?>
- <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>
+?><!--
+ <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>-->
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
@@ -107,13 +107,10 @@ else
 <script language="javascript">
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
-            var params = $("form").serialize();
-            var url = "insert.php";
-            $.ajax({
-                type: "post",
-                url: url,
-                dataType: "json",
-                data: params,
+            $.ajaxFileUpload({
+                url:"insert.php",
+                formElemNames:["title","content","upfile","options"],
+                dataType:"json",
                 success: function(msg){
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
