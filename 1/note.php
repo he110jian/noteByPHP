@@ -121,10 +121,11 @@ else
                     $("#contentE").val('');
                     $("#fileE").val('');
                     var pic = "";
-                    var i;
+                    var i = $("#count");
                     if(msg.update===-1)
                     {
-                        i=$("#count");
+                        i.text(parseInt(i.text())+1);
+                    	i = i.text();
                     }
                     else
                     {
@@ -147,7 +148,6 @@ else
                         var tail = "<hr/><p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p></div></div></div>";
                         add = add + pic + tail;
                         $("#accordion").prepend(add);
-                        i.text(parseInt(i.text())+1);
                     }
                     else
                     {
