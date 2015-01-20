@@ -1,19 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
-define(ALL_PS,"binggo");   //
-//=======================================登录
- if($_POST[sub])
- {
- 	$ps=md5($_POST[password].ALL_PS)=="e18f8200bbe2fb0b0176a3b5c6228d3e";
- 	if($ps)
-    {
- 		setcookie("login","ok",time()+3600*2);
-		header("Location:note.php");
- 	}
- }
-//===========================退出登录 
-?>
-<?php if(isset($_COOKIE["login"]))
+if(isset($_COOKIE["login"]))
 {?>
 <!DOCTYPE html>
 <html>
