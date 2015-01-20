@@ -55,7 +55,7 @@ if(1 == $_POST["options"])
 }
     $content=str_replace("\r\n","<br>",$content);
     //$time = date("Y-m-d H:i:s");
-$fielPath=$_POST["filePath"];
+$fielPath = $_POST['filePath'];
 $sql = "SELECT * FROM `note` order by time asc"; 
 $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
@@ -73,7 +73,7 @@ for($i=count($data)-1;$i>=0;$i--)
 }
     if($inse)
     {
-        $sql = "INSERT  INTO `note` ( `title`, `content`, `time`, `filePath`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW(), '"  . $mysql->escape( $filePath ) . "' ) ";
+        $sql = "INSERT  INTO `note` ( `title`, `content`, `time`, `filePath`) VALUES ('"  . $mysql->escape( $title ) . "' , '" . $mysql->escape( $content ) . "' , NOW(), '"  . $mysql->escape( $fielPath ) . "' ) ";
     }
     else
     {
