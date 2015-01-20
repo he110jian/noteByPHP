@@ -107,7 +107,7 @@ else
 <script language="javascript">
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
-            var params = $("form").serialize();
+            var params = $("form").serialize()+"&upfile="+encodeURI($("input[name='upfile']").val());
             alert(params);
             var url = "insert.php";
             $.ajax({
