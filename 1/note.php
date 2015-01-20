@@ -82,7 +82,7 @@ define(ALL_PS,"binggo");   //
           
           
 		<div class="form-group">
-			<label>图片地址</label>
+			<label>图片URL</label>
             <input id="fileE" class="form-control" name="filePath" placeholder="http://...jpg"/>
 		</div>
 
