@@ -148,7 +148,7 @@ else
                         var tail = "<p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p></div></div></div>";
                         add = add + pic + tail;
                         $("#accordion").prepend(add);
-                        coun.text(i+1);
+                        coun.text(parseInt(i)+1);
                     }
                     else
                     {
