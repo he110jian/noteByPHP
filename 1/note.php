@@ -139,7 +139,7 @@ else
                                 var pic = "<a href='"+msg.filePath+"'><span class='glyphicon glyphicon-save'> "+msg.filename+"</span></a>";
                             }
                         }
-                        add = add + tail;
+                        add = add + pic + tail;
 					}?>
                         $("#accordion").prepend(add);
                     }
