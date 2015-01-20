@@ -24,7 +24,7 @@ $pic=true;
 $filename = NULL;
     if($_POST['filePath'])
     {
-        $fielPath = $_POST['filePath'];
+        $fielPath = strip_tags($_POST['filePath']);
         $filename=basename($fielPath);
 		$type = substr(strrchr($filename, '.'),1);
 		$types = array("jpg","gif","bmp","jpeg","png");
