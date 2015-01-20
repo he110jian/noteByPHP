@@ -81,7 +81,7 @@ for($i=count($data)-1;$i>=0;$i--)
     }
     else
     {
-		$sql = "update note set content='$content' where title='$title'";
+        $sql = "update note set content='$content', filePath='$filePath' where title='$title'";
     }
 $mysql->runSql($sql);
 if ($mysql->errno() != 0)
