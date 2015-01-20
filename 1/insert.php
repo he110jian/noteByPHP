@@ -105,7 +105,7 @@ $mysql->closeDb();
     $retu["time"] = date("Y-m-d H:i:s");
     $retu["fielPath"] = $fielPath;
     $retu["filename"] = $filename;
-    $retu["pic"] = $pc;
+    $retu["pic"] = $pic;
     echo json_encode($retu);
 }
 else
