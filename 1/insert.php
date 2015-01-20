@@ -30,11 +30,6 @@ $x = explode('.', $filename);
 return '.'.end($x);
   }
 
-
-
-
-
-
 header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
