@@ -119,7 +119,7 @@ else
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
                     $("#contentE").val('');
-                    $("#fileE").val(''); 
+                    $("#fileE").val('');
                     if(msg.update===-1)
                     {
                     	var i = $("#count");
