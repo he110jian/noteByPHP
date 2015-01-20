@@ -57,6 +57,7 @@ if(1 == $_POST["options"])
     //$time = date("Y-m-d H:i:s");
 $fielPath = NULL;
 $pic=true;
+$filename = NULL;
     if($_POST['filePath'])
     {
         $fielPath = $_POST['filePath'];
