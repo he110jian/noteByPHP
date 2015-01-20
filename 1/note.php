@@ -122,7 +122,7 @@ else
                     {
                             if(msg.pic)
                             {
-                                 pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/>";
+                                pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/><hr/>";
                             }
                             else
                             {
