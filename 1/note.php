@@ -61,7 +61,7 @@ define(ALL_PS,"binggo");   //
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">For Remember</h4>
       </div>
-	  <form role="form" enctype="multipart/form-data" action="insert.php">
+	  <form role="form" enctype="multipart/form-data">
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
@@ -105,7 +105,52 @@ else
 }
 ?>
 <script language="javascript">
-        
+        $('form').bind('submit', function(){
+            document.getElementById('remember').value = 'Uploading...';
+            var params = $("form").serialize();
+            var url = "insert.php";
+            $.ajax({
+                type: "post",
+                url: url,
+                dataType: "json",
+                data: params,
+                success: function(msg){
+                    document.getElementById('remember').value = 'Save Message';
+                    $('#myModal').modal('hide');
+                    $("#titleE").val('');
+                    $("#contentE").val('');
+                    $("#fileE").val(''); 
+                    if(msg.update===-1)
+                    {
+                    	var i = $("#count");
+						i.text(parseInt(i.text())+1);
+                        i = i.text();
+                        var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading' role='tab' id='headingOne'><h4 class='panel-title'><a data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"'><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'> "+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"' class='panel-collapse collapse in'><div class='panel-body'><p id='msg"+i+"'>"+msg.content+"</p><hr/><p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p>";
+                        var tail = "</div></div></div>";
+                        var pic = "";
+                        if(msg.filePath)
+                        {
+                            if(msg.pic)
+                            {
+                                 var pic = "<a href='"+msg.filePath+"' target='_blank'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msgfilename+"'/>";
+                            }
+                            else
+                            {
+                                var pic = "<a href='"+msg.filePath+"'><span class='glyphicon glyphicon-save'> "+msg.filename+"</span></a>";
+                            }
+                        }
+                        add = add + pic + tail;
+					}?>
+                        $("#accordion").prepend(add);
+                    }
+                    else
+                    {
+                        $('#msg'+msg.update).html(msg.content);
+                    }
+                }
+            });
+            return false;
+        });
 
     function delcfm(str) {
 		var f = confirm("Never Mind?");
