@@ -144,7 +144,9 @@ else
                     }
                     else
                     {
-                        $('#msg'+msg.update).html(msg.content+pic);
+                        $('#msg'+msg.update).html(msg.content);
+                        $('#dile'+msg.update).remove();
+                        $('#msg'+msg.update).after(pic);
                     }
                 }
             });
