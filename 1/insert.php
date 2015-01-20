@@ -55,7 +55,7 @@ if(1 == $_POST["options"])
 }
     $content=str_replace("\r\n","<br>",$content);
     //$time = date("Y-m-d H:i:s");
-$fielPath = NULL;;
+$fielPath = NULL;
     if($_POST['filePath'])
     {
         $fielPath = $_POST['filePath'];
@@ -96,7 +96,7 @@ $mysql->closeDb();
 	$retu["content"] = $content;
     $retu["update"] = $update;
     $retu["time"] = date("Y-m-d H:i:s");
-    // $retu["url"] = $_FILES["upfile"]["name"];
+    $retu["fielPath"] = $fielPath;
     echo json_encode($retu);
 }
 else
