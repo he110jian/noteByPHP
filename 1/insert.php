@@ -1,17 +1,5 @@
 <?php
-
 header('Content-type: application/json');
-function check_url($url){
-
-    if(!preg_match('/http:\/\/[\w.]+[\w\/]*[\w.]*\??[\w=&\+\%]*/is',$url)){
-
-        return false;
-
-    }
-
-    return true;
-
-}
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
@@ -82,6 +70,7 @@ $mysql->closeDb();
 }
 else
 {
-	header("location:note.php");
+	echo 'log please!<br>back to index page in 3 seconds......';
+	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.php\">";
 }
 ?>
