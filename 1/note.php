@@ -82,8 +82,8 @@ define(ALL_PS,"binggo");   //
           
           
 		<div class="form-group">
-			<label for="file">附件</label>
-			<input id="fileE" name="upfile" type="file" />
+			<label for="file">图片地址</label>
+            <input id="fileE" name="file" placeholder="httP://...jpg"/>
 		</div>
 
       </div>
