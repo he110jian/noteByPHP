@@ -39,7 +39,7 @@ header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
-    //   $url = do_upload($_FILES["upfile"]["name"]);
+    //    $url = do_upload("upfile");
 $mysql = new SaeMysql();
 
     //$title=addslashes(trim($_POST["title"]));
@@ -92,7 +92,7 @@ $mysql->closeDb();
 	$retu["content"] = $content;
     $retu["update"] = $update;
     $retu["time"] = date("Y-m-d H:i:s");
-    // $retu["url"] = $_FILES["upfile"]["name"];
+    $retu["url"] = $_FILES["upfile"]["name"];
     echo json_encode($retu);
 }
 else
