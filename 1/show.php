@@ -45,21 +45,21 @@ if($message_count!=0)
 				<div class="panel-body">
 				<p id="msg<?php echo $i;?>">
 					<?php echo ($content)."</p>";
-    /*
-					if($photo!="NONE")
+    
+					if($file)
 					{
-						$photo = base64_decode($photo);
-						$type = substr(strrchr($photo, '.'),1);
+                        $filename=basename($file);
+						$type = substr(strrchr($filename, '.'),1);
 						$types = array("jpg","gif","bmp","jpeg","png");
 						if(!in_array(strtolower($type),$types))
 						{
-							echo "<a href='medias/upfile/".$photo."'><span class='glyphicon glyphicon-save' id='photo".$i."'> ".$photo."</span></a>";
+							echo "<a href='".$file."'><span class='glyphicon glyphicon-save' id='file".$i."'> ".$filename."</span></a>";
 						}
 						else
 						{
-							echo "<a href='medias/upfile/".$photo."' target='_blank'><img src='medias/upfile/".$photo."' class='img-responsive' alt='".$photo."'/>";
+							echo "<a href='".$file."' target='_blank'><img src='".$file."' class='img-responsive' alt='".$filename."'/>";
 						}
-					}*/
+					}
 					?>
 					<hr/>
 					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a>
