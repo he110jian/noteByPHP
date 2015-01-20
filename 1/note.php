@@ -130,6 +130,7 @@ else
                         var pic = "";
                         if(msg.filePath)
                         {
+                            alert("sad");
                             if(msg.pic)
                             {
                                  pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/>";
