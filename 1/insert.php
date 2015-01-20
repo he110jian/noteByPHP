@@ -24,9 +24,6 @@ if(1 == $_POST["options"])
 	$title = str_replace('>',"&gt;",$title);
 	$content = str_replace('<',"&lt;",$content);
 	$content = str_replace('>',"&gt;",$content);
-}
-else
-{
     $content=str_replace("\r\n","<br>",$content);
 }
     //$time = date("Y-m-d H:i:s");
