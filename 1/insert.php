@@ -1,6 +1,17 @@
 <?php
 
 header('Content-type: application/json');
+function check_url($url){
+
+    if(!preg_match('/http:\/\/[\w.]+[\w\/]*[\w.]*\??[\w=&\+\%]*/is',$url)){
+
+        return false;
+
+    }
+
+    return true;
+
+}
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
@@ -22,7 +33,7 @@ else
 $fielPath = NULL;
 $pic=true;
 $filename = NULL;
-    if($_POST['filePath'])
+    if($_POST['filePath']&&check_url($_POST['filePath']))
     {
         $fielPath = ($_POST['filePath']);
         $filename=basename($fielPath);
