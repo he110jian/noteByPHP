@@ -7,7 +7,7 @@ if(isset($_COOKIE["login"]))
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Remember</title>
+    <title>LIVE NOTE</title>
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link href="css/my.css" rel="stylesheet">
 
