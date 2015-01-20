@@ -51,9 +51,10 @@ for($i=count($data)-1;$i>=0;$i--)
         $sql = "update note set content='$content', filePath='$fielPath' where title='$title'";
     }
 $mysql->runSql($sql);
+    $error="";
 if ($mysql->errno() != 0)
 {
-    die("Error:" . $mysql->errmsg());
+    $error="Error:" . $mysql->errmsg();
 }
 
 $mysql->closeDb();
@@ -66,6 +67,7 @@ $mysql->closeDb();
     $retu["filePath"] = $fielPath;
     $retu["filename"] = $filename;
     $retu["pic"] = $pic;
+    $retu["error"] = $error;
     echo json_encode($retu);
 }
 else
