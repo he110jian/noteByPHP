@@ -30,11 +30,6 @@ $x = explode('.', $filename);
 return '.'.end($x);
   }
 
-
-
-
-
-
 header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
@@ -56,9 +51,16 @@ if(1 == $_POST["options"])
     $content=str_replace("\r\n","<br>",$content);
     //$time = date("Y-m-d H:i:s");
 $fielPath = NULL;
+$pic=true;
+$filename = NULL;
     if($_POST['filePath'])
     {
         $fielPath = $_POST['filePath'];
+        $filename=basename($fielPath);
+		$type = substr(strrchr($filename, '.'),1);
+		$types = array("jpg","gif","bmp","jpeg","png");
+		if(!in_array(strtolower($type),$types))
+            $pic=false;
     }
 $sql = "SELECT * FROM `note` order by time asc"; 
 $data = $mysql->getData( $sql );
@@ -97,6 +99,8 @@ $mysql->closeDb();
     $retu["update"] = $update;
     $retu["time"] = date("Y-m-d H:i:s");
     $retu["fielPath"] = $fielPath;
+    $retu["filename"] = $filename;
+    $retu["pic"] = $pic;
     echo json_encode($retu);
 }
 else
