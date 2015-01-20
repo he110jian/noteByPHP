@@ -84,7 +84,7 @@ define(ALL_PS,"binggo");   //
           
 		<div class="form-group">
 			<label for="file">附件</label>
-			<input id="fileE" name="upfile" type="file" />
+			<input id="upfile" name="upfile" type="file" />
 		</div>
 
       </div>
@@ -111,12 +111,11 @@ else
             var params = $("form").serialize()+"&upfile="+encodeURI($("input[name='upfile']").val());
             alert(params);
             var url = "insert.php";
-            $.ajax({
-                type: "post",
-                url: url,
-                dataType: "json",
-                data: params,
-                success: function(msg){
+            $.ajaxFileUpload({ url:url,
+                secureuri:false,
+                fileElementId:'upfile',
+                dataType: 'json',
+                success: function (data) {
                     alert(msg.url);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
