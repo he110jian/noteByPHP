@@ -132,11 +132,11 @@ else
                         {
                             if(msg.pic)
                             {
-                                 pic = "<a href='"+msg.filePath+"' target='_blank'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/>";
+                                 pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/>";
                             }
                             else
                             {
-                                pic = "<a href='"+msg.filePath+"'><span class='glyphicon glyphicon-save'> "+msg.filename+"</span></a>";
+                                pic = "<a href='"+msg.filePath+"' id='file"+i+"'><span class='glyphicon glyphicon-save'> "+msg.filename+"</span></a>";
                             }
                         }
                         add = add + pic + tail;
