@@ -55,7 +55,11 @@ if(1 == $_POST["options"])
 }
     $content=str_replace("\r\n","<br>",$content);
     //$time = date("Y-m-d H:i:s");
-$fielPath = $_POST['filePath'];
+$fielPath = NULL;;
+    if($_POST['filePath'])
+    {
+        $fielPath = $_POST['filePath'];
+    }
 $sql = "SELECT * FROM `note` order by time asc"; 
 $data = $mysql->getData( $sql );
 $mysql->runSql($sql);
