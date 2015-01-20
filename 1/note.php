@@ -183,7 +183,7 @@ else
 		des.value = msg_v;
         msg = document.getElementById("file"+id);
         des = document.getElementById("fileE");
-		des.value = "as";
+		des.value = msg;
 		$('#myModal').modal('show');
 	}
 	function showChange(str) {
