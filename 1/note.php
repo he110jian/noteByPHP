@@ -188,7 +188,9 @@ else
 		msg_v = msg.innerText;
 		des = document.getElementById("titleE");
 		des.value = msg_v;
-        // msg = document.getElementById("file"+id).href;
+        msg = document.getElementById("file"+id);
+        if(msg)
+            msg = msg.href;
         des = document.getElementById("fileE");
 		des.value = msg;
 		$('#myModal').modal('show');
