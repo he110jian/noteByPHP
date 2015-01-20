@@ -105,7 +105,6 @@ else
 }
 ?>
 <script language="javascript">
-    
         $('form').bind('submit', function(){
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
