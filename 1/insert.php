@@ -78,7 +78,7 @@ $mysql->closeDb();
 	$retu["content"] = $content;
     $retu["update"] = $update;
     $retu["time"] = date("Y-m-d H:i:s");
-    $retu["fielPath"] = $fielPath;
+    $retu["filePath"] = $fielPath;
     $retu["filename"] = $filename;
     $retu["pic"] = $pic;
     echo json_encode($retu);
