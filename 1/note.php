@@ -134,7 +134,7 @@ else
                             alert("s");
                             if(msg.pic)
                             {
-                                alert("s");
+                                alert("ss);
                                  pic = "<a href='"+msg.filePath+"' target='_blank'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msgfilename+"'/>";
                             }
                             else
