@@ -128,14 +128,11 @@ else
                         var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading' role='tab' id='headingOne'><h4 class='panel-title'><a data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"'><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'> "+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"' class='panel-collapse collapse in'><div class='panel-body'><p id='msg"+i+"'>"+msg.content+"</p><hr/><p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p>";
                         var tail = "</div></div></div>";
                         var pic = "";
-                        alert(msg.filePath+"\r\n"+msg.pic);
                         if(msg.filePath)
                         {
-                            alert("s");
                             if(msg.pic)
                             {
-                                alert("ss");
-                                 pic = "<a href='"+msg.filePath+"' target='_blank'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msgfilename+"'/>";
+                                 pic = "<a href='"+msg.filePath+"' target='_blank'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/>";
                             }
                             else
                             {
