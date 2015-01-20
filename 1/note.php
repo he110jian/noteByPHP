@@ -131,8 +131,10 @@ else
                         alert(msg.filePath+"\r\n"+msg.pic);
                         if(msg.filePath)
                         {
+                            alert("s");
                             if(msg.pic)
                             {
+                                alert("s");
                                  pic = "<a href='"+msg.filePath+"' target='_blank'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msgfilename+"'/>";
                             }
                             else
