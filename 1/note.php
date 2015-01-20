@@ -144,6 +144,7 @@ else
                     }
                     else
                     {
+                        alert(msg.update);
                         $('#msg'+msg.update).html(msg.content);
                         $('#file'+msg.update).remove();
                         $('#msg'+msg.update).after(pic);
