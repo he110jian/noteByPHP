@@ -53,11 +53,11 @@ if($message_count!=0)
 						$types = array("jpg","gif","bmp","jpeg","png");
 						if(!in_array(strtolower($type),$types))
 						{
-							echo "<a href='".$file."'><span class='glyphicon glyphicon-save'> ".$filename."</span></a>";
+							echo "<a href='".$file."' id='file"+i+"'><span class='glyphicon glyphicon-save'> ".$filename."</span></a>";
 						}
 						else
 						{
-							echo "<a href='".$file."' target='_blank'><img src='".$file."' class='img-responsive' alt='".$filename."'/>";
+							echo "<a href='".$file."' target='_blank' id='file"+i+"'><img src='".$file."' class='img-responsive' alt='".$filename."'/>";
 						}
 					}
 					?>
