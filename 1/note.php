@@ -145,7 +145,8 @@ else
                     else
                     {
                         $('#msg'+msg.update).html(msg.content);
-                        $('#msg'+msg.update).append(pic);
+                        $('#file'+msg.update).remove();
+                        $('#msg'+msg.update).after(pic);
                     }
                 }
             });
