@@ -105,8 +105,18 @@ else
 }
 ?>
 <script language="javascript">
+    function checkurl(){
+    var RegUrl = new RegExp(); 
+RegUrl.compile("/^(http|https|ftp)://([A-Z0-9][A-Z0-9_-]*(?:.[A-Z0-9][A-Z0-9_-]*)+):?(d+)?/?/i");
+if (!RegUrl.test(str)) { 
+return false; 
+} 
+return true;
+    }
     
         $('form').bind('submit', function(){
+            if(checkurl($("#fileE").val()))
+                alert("sad");
             document.getElementById('remember').value = 'Uploading...';
             var params = $("form").serialize();
             var url = "insert.php";
