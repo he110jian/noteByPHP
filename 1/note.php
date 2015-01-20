@@ -181,9 +181,9 @@ else
 		msg_v = msg.innerText;
 		des = document.getElementById("titleE");
 		des.value = msg_v;
-        msg = document.getElementById("file"+id).href;
-        //des = document.getElementById("fileE");
-        //des.value = msg;
+        //msg = document.getElementById("file"+id).href;
+        des = document.getElementById("fileE");
+		des.value = "as";
 		$('#myModal').modal('show');
 	}
 	function showChange(str) {
