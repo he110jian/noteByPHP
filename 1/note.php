@@ -182,7 +182,7 @@ else
 		des = document.getElementById("titleE");
 		des.value = msg_v;
         msg = document.getElementById("file"+id);
-        msg_v = $(msg).attr("href"));
+        msg_v = $(msg).attr("href");
         des = document.getElementById("fileE");
 		des.value = msg_v;
 		$('#myModal').modal('show');
