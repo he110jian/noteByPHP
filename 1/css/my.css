@@ -33,7 +33,8 @@ text-decoration : none
 	z-index:1000;
 }
 img {
-display:block; background:url('../upfile/loading.gif') no-repeat center;
+display: block;
+    background:url('../upfile/loading.gif') no-repeat center;
 min-width:50px
 }
 .returnTop .s {
