@@ -33,8 +33,7 @@ text-decoration : none
 	z-index:1000;
 }
 img {
-display:block; b
-ackground:url('../upfile/loading.gif') no-repeat bottom left;}
+display:block; background:url('../upfile/loading.gif') no-repeat bottom left;}
 .returnTop .s {
     position: absolute;
     top: -2px;
