@@ -37,8 +37,8 @@ define(ALL_PS,"binggo");   //
 
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
-?>
- <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>
+?><!--
+ <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>-->
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
@@ -82,8 +82,8 @@ define(ALL_PS,"binggo");   //
           
           
 		<div class="form-group">
-			<label for="file">图片地址</label>
-            <input id="fileE" name="file" placeholder="httP://...jpg"/>
+			<label>图片地址</label>
+            <input id="fileE" class="form-control" name="file" placeholder="httP://...jpg"/>
 		</div>
 
       </div>
