@@ -145,6 +145,7 @@ else
                     else
                     {
                         alert(msg.update);
+                        alert(pic);
                         $('#msg'+msg.update).html(msg.content+pic);
                     }
                 }
