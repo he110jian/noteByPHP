@@ -10,6 +10,7 @@ if(isset($_COOKIE["login"]))
     <title>LIVE NOTE</title>
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link href="css/my.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../upfile/loading.gif">
 
 </head>
 <!-- NAVBAR
