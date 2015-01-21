@@ -224,6 +224,14 @@ else
 		xmlhttp.open("GET","del.php?id="+str,true);
 		xmlhttp.send();
 	}
+    function funforshow() {
+			$("#accordion").toggleClass( "hidden", 1000 );
+			$("#showall").toggleClass( "glyphicon-chevron-up glyphicon-chevron-down", 1000 );
+		}
+		$("#showall").click(function(){
+			funforshow();
+			return false;
+		});
 	$(window).scroll(function() {
 		$("#leaveMSG").stop().animate({ top: $(window).scrollTop() }, "slow");
   });
