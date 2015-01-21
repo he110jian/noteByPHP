@@ -41,7 +41,7 @@ if(isset($_COOKIE["login"]))
     </div>
 	<!-- /.container -->
 	<!-- modal -->
-<div class="modal fade" id="myModal" scroll=yes>
+<div class="modal fade" id="myModal" >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
