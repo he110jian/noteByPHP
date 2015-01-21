@@ -1,5 +1,4 @@
 <?php
-header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
@@ -59,7 +58,6 @@ if ($mysql->errno() != 0)
 
 $mysql->closeDb();
 
-    //header("Location:note.php");
     $retu["title"] = $title;
 	$retu["content"] = $content;
     $retu["update"] = $update;
@@ -68,6 +66,11 @@ $mysql->closeDb();
     $retu["filename"] = $filename;
     $retu["pic"] = $pic;
     $retu["error"] = $error;
+    header('Content-type: application/json');
     echo json_encode($retu);
+}
+else
+{
+    header("Location:note.php");
 }
 ?>
