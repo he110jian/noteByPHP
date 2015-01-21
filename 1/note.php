@@ -107,6 +107,7 @@ else
                 success: function(msg){
                     if(msg.timeout)
                     {
+                        alert("登陆超时，请重新登录")
                         location.href="index.php";
                     }
                     $("#remember").val('Save Message'); 
