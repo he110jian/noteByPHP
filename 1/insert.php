@@ -1,6 +1,6 @@
 <?php
 header('Content-type: application/json');
-if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
+if($_POST['title']!=NULL)
 {
 
 $mysql = new SaeMysql();
@@ -69,10 +69,5 @@ $mysql->closeDb();
     $retu["pic"] = $pic;
     $retu["error"] = $error;
     echo json_encode($retu);
-}
-else
-{
-	echo 'log please!<br>back to index page in 3 seconds......';
-	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"2;URL=index.php\">";
 }
 ?>
