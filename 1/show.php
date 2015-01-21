@@ -65,6 +65,6 @@ if($message_count!=0)
 	
 					<?php
     }
-    echo "<h3><a href='javascript:void(0)'><span id='showall' class='pull-right glyphicon glyphicon-chevron-up'></span></a></div></h3>";
+    echo "<h3><a href='javascript:void(0)'><span id='showall' class='pull-right glyphicon glyphicon-chevron-up'></span></a></h3></div>";
 }
 ?>
