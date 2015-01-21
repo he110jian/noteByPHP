@@ -72,7 +72,7 @@ $mysql->closeDb();
 }
 else
 {
-    echo 'log please! Back to index page in 3 seconds......';
-    echo "<meta http-equiv='refresh' content='2;url=index.php'>";
+	echo 'log please!<br>back to index page in 3 seconds......';
+	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"2;URL=index.php\">";
 }
 ?>
