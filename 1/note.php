@@ -105,7 +105,6 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    alert(msg.update+" "+msg.filePath);
                     if(msg.timeout)
                     {
                         alert("浏览超时，请重新登录")
