@@ -15,7 +15,7 @@ if(isset($_COOKIE["login"]))
 <!-- NAVBAR
 ================================================== -->
 <body>
-    
+
 <?php 
 			$id = rand(0,46);
 			$st = new SaeStorage();
@@ -26,13 +26,8 @@ if(isset($_COOKIE["login"]))
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
 ?>
-    <div id="bg" class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url(http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg);"></div>
-    <script>
-        var w = (document.body.clientWidth ); //浏览器当前窗口文档的高度 
-       var h = (document.body.scrollHeight);
-        document.getElementById('bg').style.width = w + 'px';
-        document.getElementById('bg').style.height = h + 'px'
-    </script>
+    <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url(http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg);"></div>
+    
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
