@@ -42,47 +42,24 @@ if(isset($_COOKIE["login"]))
     </div>
 	<!-- /.container -->
 	<!-- modal -->
-<div class="modal fade" id="myModal">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">For Remember</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-	  <form role="form" enctype="multipart/form-data">
       <div class="modal-body">
-		<div class="form-group">
-			<label>主题</label>
-			<input id="titleE" class="form-control" name="title" placeholder="Title" maxLength="64" required />
-		</div>
-		<div class="form-group">
-			<label>内容</label>
-			<div class="btn-group pull-right" data-toggle="buttons">
-			  <label class="btn btn-default btn-xs active">
-				<input type="radio" name="options" value="1" autocomplete="off" checked> 文本
-			  </label>
-			  <label class="btn btn-default btn-xs">
-				<input type="radio" name="options" value="2" autocomplete="off"> 代码
-			  </label>
-			</div>
-			<textarea id="contentE" class="form-control" rows="5" name="content" placeholder="Content"></textarea>
-		</div>
-          
-          
-		<div class="form-group">
-			<label>附件URL</label>
-            <input id="fileE" class="form-control" name="filePath" placeholder="http://...jpg"/>
-		</div>
-
+        ...
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <input type="submit" class="btn btn-primary" id="remember" value="Save Message"/>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
-        </form>
     </div>
   </div>
 </div>
+
 
 	<?php
 }
