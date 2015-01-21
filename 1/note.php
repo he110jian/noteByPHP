@@ -104,7 +104,6 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    alert(msg.update);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
@@ -133,7 +132,6 @@ else
                     }
                     if(msg.update===-1)
                     {
-                        alert("new");
                         var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading'><h4 class='panel-title'><a data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"'><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'> "+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"' class='panel-collapse collapse in'><div class='panel-body'><p id='msg"+i+"'>"+msg.content+"</p>";
                         var tail = "<hr/><p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p></div></div></div>";
                         add = add + pic + tail;
@@ -142,7 +140,6 @@ else
                     }
                     else
                     {
-                        alert("edit");
                         $('#msg'+msg.update).html(msg.content);
                         $('#file'+msg.update).remove();
                         $('#msg'+msg.update).after(pic);
