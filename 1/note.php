@@ -105,6 +105,8 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
+                    if(msg.timeout)
+                        location.reload();   
                     $("#remember").val('Save Message'); 
                     $("#remember").removeAttr('disabled'); 
                     $('#myModal').modal('hide');
