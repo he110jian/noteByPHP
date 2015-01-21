@@ -1,5 +1,4 @@
 <?php
-error_reporting(E_ALL & ~E_NOTICE);
 if(isset($_COOKIE["login"]))
 {?>
 <!DOCTYPE html>
