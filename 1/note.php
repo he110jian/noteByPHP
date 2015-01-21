@@ -110,46 +110,49 @@ else
                         alert("浏览超时，请重新登录")
                         location.href="index.php";
                     }
-                    $("#remember").val('Save Message'); 
-                    $("#remember").removeAttr('disabled'); 
-                    $('#myModal').modal('hide');
-                    $("#titleE").val('');
-                    $("#contentE").val('');
-                    $("#fileE").val('');
-                    var pic = "";
-                    var v = $("#count");
-                    if(msg.update===-1)
-                    {
-                    	i = v.text();
-                    }
                     else
                     {
-                        i=msg.update;
-                    }
-                    if(msg.filePath)
-                    {
-                            if(msg.pic)
-                            {
-                                pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' onerror=\"this.src='../upfile/loading.gif';\"  alt='"+msg.filename+"'/></a>";
-                            }
-                            else
-                            {
-                                pic = "<a href='"+msg.filePath+"' id='file"+i+"'><span class='glyphicon glyphicon-save'> "+msg.filename+"</span></a>";
-                            }
-                    }
-                    if(msg.update===-1)
-                    {
-                        var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading'><h4 class='panel-title'><a data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"'><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'> "+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"' class='panel-collapse collapse in'><div class='panel-body'><p id='msg"+i+"'>"+msg.content+"</p>";
-                        var tail = "<hr/><p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p></div></div></div>";
-                        add = add + pic + tail;
-                        $("#accordion").prepend(add);
-                        v.text(parseInt(v.text())+1);
-                    }
-                    else
-                    {
-                        $('#msg'+msg.update).html(msg.content);
-                        $('#file'+msg.update).remove();
-                        $('#msg'+msg.update).after(pic);
+                        $("#remember").val('Save Message'); 
+                        $("#remember").removeAttr('disabled'); 
+                        $('#myModal').modal('hide');
+                        $("#titleE").val('');
+                        $("#contentE").val('');
+                        $("#fileE").val('');
+                        var pic = "";
+                        var v = $("#count");
+                        if(msg.update===-1)
+                        {
+                            i = v.text();
+                        }
+                        else
+                        {
+                            i=msg.update;
+                        }
+                        if(msg.filePath)
+                        {
+                                if(msg.pic)
+                                {
+                                    pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' onerror=\"this.src='../upfile/loading.gif';\"  alt='"+msg.filename+"'/></a>";
+                                }
+                                else
+                                {
+                                    pic = "<a href='"+msg.filePath+"' id='file"+i+"'><span class='glyphicon glyphicon-save'> "+msg.filename+"</span></a>";
+                                }
+                        }
+                        if(msg.update===-1)
+                        {
+                            var add = "<div class='panel panel-default' id='"+msg.time+"'><div class='panel-heading'><h4 class='panel-title'><a data-toggle='collapse' data-parent='#accordion' href='#collapse"+i+"'><span  class='glyphicon glyphicon-circle-arrow-right'></span><span id='title"+i+"'> "+msg.title+"</span><small class='pull-right text-muted'>"+msg.time+"</small></a></h4></div><div id='collapse"+i+"' class='panel-collapse collapse in'><div class='panel-body'><p id='msg"+i+"'>"+msg.content+"</p>";
+                            var tail = "<hr/><p class='text-center'><a href='javascript:void(0);' onclick='edit("+i+")' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a><a class='pull-right text-danger' href='javascript:void(0);' onclick=\"return delcfm(\'"+msg.time+"\');\"><span class='glyphicon glyphicon-remove'></span></a></p></div></div></div>";
+                            add = add + pic + tail;
+                            $("#accordion").prepend(add);
+                            v.text(parseInt(v.text())+1);
+                        }
+                        else
+                        {
+                            $('#msg'+msg.update).html(msg.content);
+                            $('#file'+msg.update).remove();
+                            $('#msg'+msg.update).after(pic);
+                        }
                     }
                 }
             });
