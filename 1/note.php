@@ -95,8 +95,8 @@ else
 <script language="javascript">
    
         $('form').bind('submit', function(){
-            $("remember").vaule("Uploading..."); 
-            $("remember").attr('disabled',true); 
+            $("#remember").vaule("Uploading..."); 
+            $("#remember").attr('disabled',true); 
             var params = $("form").serialize();
             var url = "insert.php";
             $.ajax({
@@ -105,8 +105,8 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    $("remember").vaule('Save Message'); 
-                    $("remember").removeAttr('disabled'); 
+                    $("#remember").vaule('Save Message'); 
+                    $("#remember").removeAttr('disabled'); 
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
                     $("#contentE").val('');
