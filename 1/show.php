@@ -57,7 +57,7 @@ if($message_count!=0)
 						}
 						else
 						{
-							echo "<a href='".$file."' target='_blank' id='file".$i."'><img src='".$file."' class='img-responsive' alt='".$filename."'/>";
+                            echo "<a href='".$file."' target='_blank' id='file".$i."'><img src='".$file."' class='img-responsive' onerror=\"this.src='../upfile/loading.gif';\" alt='".$filename."'/>";
 						}
 					}
 					?>
