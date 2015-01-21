@@ -14,7 +14,7 @@ if(isset($_COOKIE["login"]))
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body>
+
 <?php 
 			$id = rand(0,46);
 			$st = new SaeStorage();
@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
 ?>
- <div class="s-skin-container" style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');"></div>
+<body style="background-color:rgb(64, 64, 64);background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');">
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
