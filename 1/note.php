@@ -16,7 +16,7 @@ if(isset($_COOKIE["login"]))
 ================================================== -->
 <body>
     <script>
-        alert($(document).height()); //浏览器当前窗口文档的高度 
+        alert(window.screen.availWidth ); //浏览器当前窗口文档的高度 
     </script>
 <?php 
 			$id = rand(0,46);
