@@ -2,7 +2,7 @@
 if(isset($_COOKIE["login"]))
 {?>
 <!DOCTYPE html>
-<html>
+<html style="background-image:url(http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg);background-size:cover;background-attachment:fixed">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
 ?>
-    <body style="background-image:url(http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg);background-size:contain;background-attachment:fixed">
+    <body>
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
