@@ -42,7 +42,7 @@ if(isset($_COOKIE["login"]))
     </div>
 	<!-- /.container -->
 	<!-- modal -->
-<div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+<div class="modal fade" id="myModal" role="dialog" aria-hidden="true" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
