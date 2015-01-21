@@ -1,6 +1,6 @@
 
 body{
-    background-attachment: fixed;
+    background-attachment: fixed; background-size:cover;
 overflow-y: scroll;font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", sans-serif}
 
 hr{
