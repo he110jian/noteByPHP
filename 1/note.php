@@ -77,7 +77,7 @@ if(isset($_COOKIE["login"]))
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <input type="submit" class="btn btn-primary" id="remember" disabled="false" value="Save Message"/>
+          <input type="submit" class="btn btn-primary" id="remember" disabled=false value="Save Message"/>
       </div>
         </form>
     </div>
@@ -106,7 +106,7 @@ else
                 data: params,
                 success: function(msg){
                     $("remember").vaule('Save Message'); 
-                    $("remember").attr('disabled',true); 
+                    $("remember").attr('disabled',false); 
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
                     $("#contentE").val('');
