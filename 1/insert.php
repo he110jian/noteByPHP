@@ -1,4 +1,5 @@
 <?php
+header('Content-type: application/json');
 if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
@@ -66,7 +67,6 @@ $mysql->closeDb();
     $retu["filename"] = $filename;
     $retu["pic"] = $pic;
     $retu["error"] = $error;
-    header('Content-type: application/json');
     echo json_encode($retu);
 }
 else
