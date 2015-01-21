@@ -129,7 +129,7 @@ else
                     {
                             if(msg.pic)
                             {
-                                pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' alt='"+msg.filename+"'/></a>";
+                                pic = "<a href='"+msg.filePath+"' target='_blank' id='file"+i+"'><img src='"+msg.filePath+"' class='img-responsive' onerror=\"this.src='../upfile/loading.gif';\"  alt='"+msg.filename+"'/></a>";
                             }
                             else
                             {
