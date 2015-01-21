@@ -71,6 +71,7 @@ $mysql->closeDb();
 }
 else
 {
-    header("Location:note.php");
+    $retu["timeout"] = true;
+    echo json_encode($retu);
 }
 ?>
