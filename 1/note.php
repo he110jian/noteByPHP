@@ -105,7 +105,7 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    $("#remember").vaule('Save Message'); 
+                    $("#remember").val('Save Message'); 
                     $("#remember").removeAttr('disabled'); 
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
