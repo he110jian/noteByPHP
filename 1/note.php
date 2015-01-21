@@ -88,8 +88,8 @@ if(isset($_COOKIE["login"]))
 }
 else
 {
-	echo 'log please!<br>back to index page in 3 seconds......';
-	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"2;URL=index.php\">";
+    echo '<h3>log please!<br>back to index page in 3 seconds......<h3/>';
+	echo "<META HTTP-EQUIV=\"Refresh\" CONTENT=\"3;URL=index.php\">";
 }
 ?>
 <script language="javascript">
