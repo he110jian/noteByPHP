@@ -104,6 +104,7 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
+                    alert(msg.update);
                     document.getElementById('remember').value = 'Save Message';
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
