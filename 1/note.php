@@ -95,7 +95,7 @@ else
 <script language="javascript">
    
         $('form').bind('submit', function(){
-            $("#remember").vaule("Uploading..."); 
+            $("#remember").val("Uploading..."); 
             $("#remember").attr('disabled',true); 
             var params = $("form").serialize();
             var url = "insert.php";
