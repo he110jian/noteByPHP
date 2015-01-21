@@ -19,7 +19,7 @@ if(isset($_COOKIE["login"]))
         var w = (document.body.clientWidth ); //浏览器当前窗口文档的高度 
        var h = (document.body.scrollHeight);
         document.getElementById('s-skin-container').style.width = w + 'px';
-        document.getElementById('s-skin-container').style.height = w + 'px'
+        document.getElementById('s-skin-container').style.height = h + 'px'
     </script>
 <?php 
 			$id = rand(0,46);
