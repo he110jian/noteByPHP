@@ -1,6 +1,6 @@
 <?php
 header('Content-type: application/json');
-if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
+if($_POST['title']!=NULL)
 {
 
 $mysql = new SaeMysql();
@@ -67,11 +67,8 @@ $mysql->closeDb();
     $retu["filename"] = $filename;
     $retu["pic"] = $pic;
     $retu["error"] = $error;
-    echo json_encode($retu);
-}
-else
-{
-    $retu["timeout"] = true;
+    if(isset($_COOKIE["login"]))
+        $retu["timeout"] = true;
     echo json_encode($retu);
 }
 ?>
