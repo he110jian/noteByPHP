@@ -16,8 +16,9 @@ if(isset($_COOKIE["login"]))
 ================================================== -->
 <body>
     <script>
-        alert(document.body.clientWidth ); //浏览器当前窗口文档的高度 
-       alert(document.body.scrollHeight);
+        var w = (document.body.clientWidth ); //浏览器当前窗口文档的高度 
+       var h = (document.body.scrollHeight);
+        document.getElementById('s-skin-container').style.width = w + 'px'
     </script>
 <?php 
 			$id = rand(0,46);
