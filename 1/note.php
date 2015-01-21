@@ -107,7 +107,6 @@ else
                 success: function(msg){
                     if(msg.timeout)
                     {
-                        alert("1");
                         windows.location.reload();  
                     }
                     $("#remember").val('Save Message'); 
