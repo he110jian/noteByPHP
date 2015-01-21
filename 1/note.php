@@ -25,7 +25,7 @@ if(isset($_COOKIE["login"]))
 			$last = explode("\r\n",$content);
 			$last = $last[$id];
 ?>
-<body style="background-attachment:fixed; background-image:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg');">
+<body style="background:url('http://images.wisegeek.com/images/dyk/<?php echo $last;?>.jpg') no-repeat center fixed">
     <div class="container"> 
 		<div class="middlediv">
             <div id="music">
