@@ -48,7 +48,10 @@ for($i=count($data)-1;$i>=0;$i--)
     }
     else
     {
-        $sql = "update note set content='". $mysql->escape( $content ) ."', filePath='". $mysql->escape( $fielPath ) ."' where title='$title'";
+        if(!strcmp($content,$msg['content']))
+        	$sql = "update note set filePath='". $mysql->escape( $fielPath ) ."' where title='$title'";
+        else
+            $sql = "update note set content='". $mysql->escape( $content ) ."', filePath='". $mysql->escape( $fielPath ) ."' where title='$title'";
     }
 $mysql->runSql($sql);
     $error="";
