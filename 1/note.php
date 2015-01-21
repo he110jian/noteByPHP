@@ -77,7 +77,7 @@ if(isset($_COOKIE["login"]))
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <input type="submit" class="btn btn-primary" id="remember" value="Save Message"/>
+          <input type="submit" class="btn btn-primary" id="remember" disabled="false" value="Save Message"/>
       </div>
         </form>
     </div>
@@ -93,9 +93,10 @@ else
 }
 ?>
 <script language="javascript">
-    
+   
         $('form').bind('submit', function(){
-            document.getElementById('remember').value = 'Uploading...';
+            $("remember").vaule("Uploading..."); 
+            $("remember").attr('disabled',true); 
             var params = $("form").serialize();
             var url = "insert.php";
             $.ajax({
@@ -104,7 +105,8 @@ else
                 dataType: "json",
                 data: params,
                 success: function(msg){
-                    document.getElementById('remember').value = 'Save Message';
+                    $("remember").vaule('Save Message'); 
+                    $("remember").attr('disabled',true); 
                     $('#myModal').modal('hide');
                     $("#titleE").val('');
                     $("#contentE").val('');
