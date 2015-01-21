@@ -67,6 +67,7 @@ $mysql->closeDb();
     $retu["filename"] = $filename;
     $retu["pic"] = $pic;
     $retu["error"] = $error;
+    $retu["timeout"] = false;
     if(isset($_COOKIE["login"]))
         $retu["timeout"] = true;
     echo json_encode($retu);
