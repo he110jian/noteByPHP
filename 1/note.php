@@ -107,7 +107,7 @@ else
                 success: function(msg){
                     if(msg.timeout)
                     {
-                        windows.location.reload();  
+                        location.reload();
                     }
                     $("#remember").val('Save Message'); 
                     $("#remember").removeAttr('disabled'); 
