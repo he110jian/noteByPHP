@@ -57,11 +57,11 @@ if($message_count!=0)
 						}
 						else
 						{
-                            echo "<a href='".$file."' target='_blank' id='file".$i."'><img src='".$file."' class='img-responsive' onerror=\"this.src='../upfile/loading.gif';\" alt='".$filename."'/>";
+                            echo "<a href='".$file."' target='_blank' id='file".$i."'><img src='".$file."' class='img-responsive' onerror=\"this.src='../upfile/loading.gif';\" alt='".$filename."'/></a>";
 						}
 					}
 					?>
-					<hr>
+                    <hr/>
 					<p class="text-center"><a href='javascript:void(0);' onclick='edit(<?php echo $i;?>)' class='pull-left text-info'><span class='glyphicon glyphicon-edit'></span></a>
                         <a class='pull-right text-danger' href='javascript:void(0);' onclick="return delcfm('<?php echo $addtime;?>');"><span class='glyphicon glyphicon-remove'></span></a></p>
 					</div>
