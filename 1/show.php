@@ -13,7 +13,7 @@ $mysql->closeDb();
 
 $message_count=count($data);   //计算有多少条
 
-    echo "<h3><span id='count' class='text-danger'>".$message_count."</span><a href='out.php?out=out' onclick='return delVer()'><span class='pull-right glyphicon glyphicon-remove-circle'></span></a></h3>";
+    echo "<h3><span id='count' class='text-warning'>".$message_count."</span><a href='out.php?out=out' onclick='return delVer()'><span class='text-danger pull-right glyphicon glyphicon-remove-circle'></span></a></h3>";
 
 echo '<div id="leaveMSG" style="position: absolute; top: 0px; width: 61.8%;" class="text-right"><a class="btn btn-success" data-toggle="modal" data-target="#myModal">Leave A Message</a></div>';
 if($message_count!=0)
