@@ -225,7 +225,7 @@ else
 		xmlhttp.send();
 	}
     function funforshow() {
-			$("#accordion").toggleClass( "hidden", 1000 );
+			$("#accordion").toggleClass( "fade", 1000 );
 			$("#showall").toggleClass( "glyphicon-chevron-up glyphicon-chevron-down", 1000 );
 		}
 		$("#showall").click(function(){
