@@ -107,6 +107,7 @@ else
                 success: function(msg){
                     if(msg.timeout)
                     {
+                        alert("登陆超时,请重新登陆");
                         location.reload();
                     }
                     $("#remember").val('Save Message'); 
@@ -175,6 +176,7 @@ else
 		}
 	}
 	function edit(id) {
+        if()
 		var msg = document.getElementById("msg"+id);
 		var msg_v = msg.innerText;
 		var des = document.getElementById("contentE");
