@@ -95,8 +95,6 @@ else
 <script language="javascript">
    
         $('form').bind('submit', function(){
-            if(!$.cookie("login"))
-                return false;
             $("#remember").val("Uploading..."); 
             $("#remember").attr('disabled',true); 
             var params = $("form").serialize();
