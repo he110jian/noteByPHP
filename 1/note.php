@@ -53,7 +53,7 @@ if(isset($_COOKIE["login"]))
       <div class="modal-body">
 		<div class="form-group">
 			<label>主题</label>
-			<input id="titleE" class="form-control" name="title" placeholder="Title" required />
+			<input id="titleE" class="form-control" name="title" placeholder="Title" maxLength="64" required />
 		</div>
 		<div class="form-group">
 			<label>内容</label>
