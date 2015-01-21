@@ -1,6 +1,6 @@
 <?php
 header('Content-type: application/json');
-if($_POST['title']!=NULL)
+if(isset($_COOKIE["login"]) && $_POST['title']!=NULL)
 {
 
 $mysql = new SaeMysql();
