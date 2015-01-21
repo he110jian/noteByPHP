@@ -107,7 +107,7 @@ else
                 success: function(msg){
                     if(msg.timeout)
                     {
-                        location.reload();
+                        location.href="index.php";
                     }
                     $("#remember").val('Save Message'); 
                     $("#remember").removeAttr('disabled'); 
