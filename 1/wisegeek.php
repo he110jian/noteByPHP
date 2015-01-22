@@ -26,7 +26,7 @@ header("Content-type: text/html; charset=utf-8");//防止中文乱码
             }
 			else
             {
-                echo "服务器还未更新，请稍后再试，每天17:00更新一条";
+                echo "服务器还未更新，请稍后再试，每天16:00更新一条";
             }
 echo $st->read( $domain, $filename );/*
 			$id = rand(0,46);
