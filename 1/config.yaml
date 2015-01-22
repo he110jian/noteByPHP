@@ -1,0 +1,6 @@
+name: wisegeek
+version: 1
+cron:
+- description: wisegeek_fetch
+  url: /wisegeek.php
+  schedule: "5 0 * * *"
